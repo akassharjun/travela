@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes, minimal-ui">
+
+    <!-- Loading the jQuery & jQuery UI libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+
+    <!-- Loading the font library -->
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+
+    <!-- Loading the Bootstrap library -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Loading local stylesheets & scripts -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/index.js"></script>
+
+    <title>Travela</title>
+
+</head>
+<body>
+<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo-together.svg" width="170px" height="80px" class="d-inline-block align-top" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end mr-2" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active p-3">
+                <a class="nav-link" href="#">
+                    Destinations<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item  p-3">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item  p-3">
+                <a class="nav-link" href="hotel.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="hero-container">
+    <div class="container">
+        <h1 class="text-center" style="color: white;font-family: 'Playfair Display', serif; font-weight: 700;">
+            Everything. Right, where
+            you need it.</h1>
+        <br/>
+        <div id="search-criteria-card">
+            <form>
+                <div class="input-row">
+                    <div>
+                        <label for="destination">Destination</label>
+                        <input type="text" class="input-item" id="destination" aria-describedby="emailHelp"
+                               placeholder="Enter a destination">
+                    </div>
+                    <div>
+                        <label for="speed">Select a price range</label>
+                        <select class="input-item" name="speed" id="speed">
+                            <option>$</option>
+                            <option>$$</option>
+                            <option selected="selected">$$$</option>
+                            <option>$$$$</option>
+                            <option>$$$$$</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div>
+                        <label for="start-date">Start Date</label>
+                        <input type="text" class="input-item" id="start-date" aria-describedby="emailHelp"
+                               placeholder="Select start date"></div>
+                    <div>
+                        <label for="end-date">End Date</label>
+                        <input type="text" class="input-item" id="end-date" aria-describedby="emailHelp"
+                               placeholder="Select end date"></div>
+                </div>
+                <div class="input-row">
+                    <div>
+                        <label for="sc">Destination</label>
+                        <input type="text" class="input-item" id="sc" aria-describedby="emailHelp"
+                               placeholder="Enter a destination">
+                    </div>
+                    <div>
+                        <label for="speed">Select a speed</label>
+                        <select class="input-item" name="speed" id="cs">
+                            <option>Slower</option>
+                            <option>Slow</option>
+                            <option selected="selected">Medium</option>
+                            <option>Fast</option>
+                            <option>Faster</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="search-button">Search Away!</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="projects-horizontal mt-5 mb-5">
+    <div class="container">
+        <div class="intro mb-4">
+            <h2 class="text-center">The Hotels </h2>
+            <p class="text-center">Looking for perfect for a romantic getaway? A chill vacation by the sea? We got you
+                covered!</p>
+        </div>
+        <div class="row projects">
+            <div class="col-sm-6 item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="img/maldives.jpg"/></a>
+                    </div>
+                    <div class="col">
+                        <h4 class="name">Maldives Mayhem</h4>
+                        <p class="description">Located in the heart of Maldives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="img/maldives.jpg"/></a>
+                    </div>
+                    <div class="col">
+                        <h4 class="name">Project Name</h4>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                            Praesent aliquam in tellus eu gravida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="img/maldives.jpg"/></a>
+                    </div>
+                    <div class="col">
+                        <h4 class="name">Project Name</h4>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                            Praesent aliquam in tellus eu gravida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="img/maldives.jpg"/></a>
+                    </div>
+                    <div class="col">
+                        <h4 class="name">Project Name</h4>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                            Praesent aliquam in tellus eu gravida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

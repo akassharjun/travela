@@ -51,4 +51,13 @@ $(document).ready(function () {
         localStorage.setItem("priceRange", `${priceRange}`);
         return false;
     });
+
+    $('.destination-image').click(function () {
+        console.log("hi");
+        let destination = $(this).attr('aria-valuetext');
+        localStorage.setItem("destination", `${destination}`);
+        // console.log(localStorage.getItem("destination"));
+        window.location = './destination.html';
+        return false;
+    });
 });

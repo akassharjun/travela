@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes, minimal-ui">
+
+    <!-- Loading the jQuery & jQuery UI libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+
+    <!-- Loading the font library -->
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+
+    <!-- Loading the Bootstrap library -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Loading local stylesheets & scripts -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="css/navigation-bar.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/destination.css"/>
+    <script src="js/destination.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+
+<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img id="brand-logo" src="img/logo-together.svg" width="170px" height="80px" class="d-inline-block align-top"
+             alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end mr-2" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item p-3">
+                <a class="nav-link" href="#">Destinations<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item  p-3">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item  p-3">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container destination-details">
+    <img class="destination-hero-image"
+         src="img/berjaya/Berjaya%20Hotel%20Colombo%20-%20Facade%20-%20Night%20view.webp"
+         alt="First slide">
+    <h1 id="destination-name" class="text-left mt-4 mb-0">Berjaya Hotel</h1>
+    <p id="destination-location" class="text-left mt-0 mb-3">location</p>
+    <p id="destination-description" class="text-left">Lorem Ipsom some text to describe the resort.Lorem Ipsom some text to
+        describe the resort.Lorem Ipsom some text to describe the resort.Lorem Ipsom some text to describe the
+        resort.Lorem Ipsom some text to describe the resort.Lorem Ipsom some text to describe the resort.</p>
+
+</div>
+</body>
+</html>

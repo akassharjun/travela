@@ -1,0 +1,18 @@
+#navigation-bar {
+    padding: 1% 10% 1% 10%;
+    background: transparent;
+    z-index: 1;
+}
+
+
+@media (max-width: 600px) {
+    #navigation-bar {
+        padding: 0.5% 2.5% 0.5% 2.5%;
+        z-index: 1;
+    }
+
+    #brand-logo {
+        width: 120px;
+        height: 70px;
+    }
+}

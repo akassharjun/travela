@@ -1,10 +1,4 @@
-#navigation-bar {
-    padding: 1% 10% 1% 10%;
-    background: transparent;
-    z-index: 1;
-    /*background: rgba(0, 0, 0, 0.75);*/
-    /*backdrop-filter: blur(1px);*/
-}
+
 
 #activities {
     text-transform: capitalize;
@@ -12,47 +6,7 @@
 
 .hotel-hero-image {
     height: 60vh;
-}
-
-.d-block {
-    object-fit: contain;
-}
-
-.footer-dark {
-    padding: 100px 0;
-    color: #f0f9ff;
-}
-
-.footer-dark a[href^="#"] {
-    color: white;
-}
-
-@media (max-width: 600px) {
-    #navigation-bar {
-        padding: 0.5% 2.5% 0.5% 2.5%;
-        z-index: 1;
-    }
-
-    .hotel-hero-image {
-        height: 30vh;
-    }
-
-    .d-block {
-        object-fit: contain;
-    }
-
-    #brand-logo {
-        width: 120px;
-        height: 70px;
-    }
-}
-
-p {
-    margin: 0;
-}
-
-h5 {
-    margin: 0;
+    object-fit: cover;
 }
 
 #hotel-location {
@@ -64,6 +18,42 @@ h5 {
     text-transform: capitalize;
     color: dodgerblue !important;
 }
+
+#hotel-location {
+    color: dodgerblue;
+}
+
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+
+@media (max-width: 600px) {
+    .hotel-hero-image {
+        height: 30vh;
+    }
+
+
+    .photo {
+        /*border: 1px solid white;*/
+        object-fit: cover;
+        height: 20vh;
+        /*width: 80vw;*/
+    }
+
+}
+
+p {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
 
 .item {
     border: 1px solid rgba(100, 100, 100, 0.5);
@@ -80,9 +70,7 @@ h5 {
     color: dodgerblue;
 }
 
-#hotel-location {
-    color: dodgerblue;
-}
+
 
 .features .item .name {
     margin-top: 0.1em;
@@ -100,11 +88,20 @@ h5 {
     font-weight: bolder;
 }
 
-.hotel-details {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+.photo-container {
+    border: 0;
+    /*margin: 10px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.photo {
+    /*border: 1px solid white;*/
+    object-fit: cover;
+    /*height: 15vh;*/
+    /*width: 30vw;*/
+}
+
 
 
 /*# sourceMappingURL=hotel.css.map */

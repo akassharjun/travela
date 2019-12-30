@@ -1,0 +1,33 @@
+
+.destination-hero-image {
+    height: 60vh;
+    object-fit: cover;
+}
+
+#destination-location {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/*#destination-location {*/
+/*    text-transform: capitalize;*/
+/*    color: dodgerblue !important;*/
+/*}*/
+
+.destination-details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+
+@media (max-width: 600px) {
+    .destination-hero-image {
+        height: 30vh;
+    }
+
+    .d-block {
+        object-fit: cover;
+    }
+}

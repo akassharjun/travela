@@ -49,13 +49,14 @@ body {
   align-items: flex-start;
 }
 
-.input-item, select {
+.input-item,
+select {
   border-radius: 10px !important;
   margin: 0 20px 20px 0;
 }
 
 .input-item {
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.4;
   width: 20vw;
   border: 0;
@@ -82,7 +83,7 @@ select {
   justify-content: center;
   text-align: center;
   /* orange-gradient */
-  background: linear-gradient(100.5deg, #F8A170 14.73%, #FFCD61 97.52%);
+  background: linear-gradient(100.5deg, #f8a170 14.73%, #ffcd61 97.52%);
   box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
   border: 0;
   border-radius: 100px;
@@ -109,7 +110,6 @@ select {
     backdrop-filter: blur(1px);
   }
 
-
   .input-item {
     margin: 0 0 8px 0;
     padding: 8px;
@@ -131,11 +131,9 @@ select {
   #search-button {
     padding: 8px 35px;
   }
-
 }
 
 @media (max-width: 600px) {
-
   #brand-logo {
     width: 120px;
     height: 50px;

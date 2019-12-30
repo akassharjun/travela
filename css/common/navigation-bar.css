@@ -1,0 +1,19 @@
+#navigation-bar {
+  padding: 1% 20% 1% 20%;
+  /*background: transparent;*/
+  /*z-index: 1;*/
+  /*width: 80vw;*/
+  /*background: rebeccapurple;*/
+}
+
+@media (max-width: 600px) {
+  #navigation-bar {
+    padding: 0.5% 2.5% 0.5% 2.5%;
+    z-index: 1;
+  }
+
+  #brand-logo {
+    width: 140px;
+    height: 75px;
+  }
+}

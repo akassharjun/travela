@@ -1,107 +1,106 @@
-
-
 #activities {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .hotel-hero-image {
-    height: 60vh;
-    object-fit: cover;
+  height: 55vh;
+  object-fit: cover;
 }
 
 #hotel-location {
-    font-weight: 800;
-    text-transform: uppercase;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 #location-text {
-    text-transform: capitalize;
-    color: dodgerblue !important;
+  text-transform: capitalize;
+  color: dodgerblue !important;
 }
 
 #hotel-location {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .hotel-details {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
-
-
 @media (max-width: 600px) {
-    .hotel-hero-image {
-        height: 30vh;
-    }
+  .hotel-hero-image {
+    height: 30vh;
+  }
 
-
-    .photo {
-        /*border: 1px solid white;*/
-        object-fit: cover;
-        height: 20vh;
-        /*width: 80vw;*/
-    }
-
+  .photo-container .img-fluid {
+    height: 30%;
+  }
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 h5 {
-    margin: 0;
+  margin: 0;
 }
 
-
 .item {
-    border: 1px solid rgba(100, 100, 100, 0.5);
+  border: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 .review-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .date {
-    font-size: small;
-    color: dodgerblue;
+  font-size: small;
+  color: dodgerblue;
 }
 
-
-
 .features .item .name {
-    margin-top: 0.1em;
-    margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
 }
 
 .features .item .description {
-    margin-top: 0.1em;
-    margin-bottom: 0.6em;
+  margin-top: 0.1em;
+  margin-bottom: 0.6em;
 }
 
 .information .item .description {
-    color: dodgerblue;
-    font-size: 1.1em;
-    font-weight: bolder;
+  color: dodgerblue;
+  font-size: 1.1em;
+  font-weight: bolder;
 }
 
 .photo-container {
-    border: 0;
-    /*margin: 10px;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
+  border: 0;
+  /*margin: 10px;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.photo {
-    /*border: 1px solid white;*/
-    object-fit: cover;
-    /*height: 15vh;*/
-    /*width: 30vw;*/
+/*.photo {*/
+/*  !*border: 1px solid white;*!*/
+/*  object-fit: cover;*/
+/*  !*height: 15vh;*!*/
+/*  !*width: 30vw;*!*/
+/*}*/
+
+.photo-container .img-fluid {
+  /*height: 15vh;*/
+  object-fit: cover;
+  /*width: 30vw;*/
+  /*max-width: 100% !important;*/
+  /*min-width: 100%;*/
+  /*min-height: 0.01px;*/
+  /*width: 100vw;*/
+  /*height: 15vh;*/
+  height: 150px;
+  width: 100%;
 }
-
-
 
 /*# sourceMappingURL=hotel.css.map */

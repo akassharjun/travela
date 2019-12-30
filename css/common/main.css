@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap");
 @font-face {
   font-family: "AirbnbCereal";
-  src: url("../font/AirbnbCereal-Book.ttf") format("truetype"), url("../font/AirbnbCereal-Medium.ttf") format("truetype"), url("../font/AirbnbCereal-Black.ttf") format("truetype");
+  src: url("../../font/AirbnbCereal-Book.ttf") format("truetype"),
+    url("../../font/AirbnbCereal-Medium.ttf") format("truetype"),
+    url("../../font/AirbnbCereal-Black.ttf") format("truetype");
 }
 @font-face {
   font-family: "NetflixSans";
-  src: url("../font/netflix_sans_bold.otf") format("opentype");
-  src: url("../font/netflix_sans_light.otf") format("opentype");
+  src: url("../../font/netflix_sans_bold.otf") format("opentype");
+  src: url("../../font/netflix_sans_light.otf") format("opentype");
 }
 * {
   color: white;
@@ -22,7 +24,12 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Playfair Display, serif;
 }
 
@@ -67,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 600px) {
-
   #copyright-text {
     margin-top: 2em;
     margin-bottom: 0.5em;

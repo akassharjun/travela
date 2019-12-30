@@ -1,12 +1,11 @@
-
 .destination-hero-image {
-    height: 60vh;
-    object-fit: cover;
+  height: 60vh;
+  object-fit: cover;
 }
 
 #destination-location {
-    font-weight: 800;
-    text-transform: uppercase;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 /*#destination-location {*/
@@ -15,19 +14,17 @@
 /*}*/
 
 .destination-details {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
-
-
 @media (max-width: 600px) {
-    .destination-hero-image {
-        height: 30vh;
-    }
+  .destination-hero-image {
+    height: 30vh;
+  }
 
-    .d-block {
-        object-fit: cover;
-    }
+  .d-block {
+    object-fit: cover;
+  }
 }

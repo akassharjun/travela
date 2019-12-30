@@ -1,9 +1,19 @@
+body {
+  overflow-x: hidden;
+}
+
 #hero-container {
   height: 100vh;
+  width: 100vw;
   background: #cccccc url("../img/hero-image.jpg") no-repeat top;
   background-size: cover;
   display: flex;
   align-items: center;
+}
+
+#brand-logo {
+  width: 170px;
+  height: 80px;
 }
 
 .container {
@@ -46,12 +56,9 @@
 
 .input-item {
   background: #FFFFFF;
-  opacity: 0.3;
-  /*width: 300px;*/
+  opacity: 0.4;
   width: 20vw;
-  /*width: 120%;*/
-  /*text-indent: 20px;*/
-  /* identical to box height */
+  border: 0;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -66,29 +73,74 @@ select {
 }
 
 #search-button {
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   padding: 10px 50px;
   margin-top: 2.5vh;
+  margin-bottom: 1vh;
   font-weight: 600 !important;
   justify-content: center;
   text-align: center;
-  /*padding: 20px;*/
   /* orange-gradient */
   background: linear-gradient(100.5deg, #F8A170 14.73%, #FFCD61 97.52%);
-  box-shadow: 0px 10px 40px rgba(248, 161, 112, 0.2);
+  box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
   border: 0;
   border-radius: 100px;
 }
 
-.iconify {
-  position: absolute;
-  right: 55%;
-  top: 42%;
+.col-sm-6 {
+  margin-bottom: 2em;
+}
+
+.description {
+  font-size: 0.85em;
+}
+
+.img-fluid {
+  height: 20vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+@media (max-height: 600px) {
+  #navigation-bar {
+    padding: 1% 3% 1% 3%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(1px);
+  }
+
+
+  .input-item {
+    margin: 0 0 8px 0;
+    padding: 8px;
+  }
+
+  #search-criteria-card {
+    padding: 16px;
+  }
+
+  #hero-title {
+    font-size: large;
+    margin: 0 auto;
+  }
+
+  .label {
+    font-size: 0.3em;
+  }
+
+  #search-button {
+    padding: 8px 35px;
+  }
+
 }
 
 @media (max-width: 600px) {
+
+  #brand-logo {
+    width: 120px;
+    height: 50px;
+  }
+
   #navigation-bar {
     padding: 1% 4% 1% 4%;
     background: rgba(0, 0, 0, 0.75);
@@ -97,6 +149,8 @@ select {
 
   .input-row {
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
   }
 
   #hero-container {
@@ -104,16 +158,21 @@ select {
   }
 
   .input-item {
-    width: 85vw;
+    width: 75vw;
   }
 
   #search-button {
     text-align: center;
-    width: 85vw;
+    width: 75vw;
   }
-}
-.col-sm-6 item {
-  margin: 20px !important;
+
+  .name {
+    margin-top: 0.5em;
+  }
+
+  .col-sm-6 {
+    margin-bottom: 1em !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,110 @@
+#navigation-bar {
+    padding: 1% 10% 1% 10%;
+    background: transparent;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, 0.75);*/
+    /*backdrop-filter: blur(1px);*/
+}
+
+#activities {
+    text-transform: capitalize;
+}
+
+.hotel-hero-image {
+    height: 60vh;
+}
+
+.d-block {
+    object-fit: contain;
+}
+
+.footer-dark {
+    padding: 100px 0;
+    color: #f0f9ff;
+}
+
+.footer-dark a[href^="#"] {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #navigation-bar {
+        padding: 0.5% 2.5% 0.5% 2.5%;
+        z-index: 1;
+    }
+
+    .hotel-hero-image {
+        height: 30vh;
+    }
+
+    .d-block {
+        object-fit: contain;
+    }
+
+    #brand-logo {
+        width: 120px;
+        height: 70px;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+#hotel-location {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#location-text {
+    text-transform: capitalize;
+    color: dodgerblue !important;
+}
+
+.item {
+    border: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: small;
+    color: dodgerblue;
+}
+
+#hotel-location {
+    color: dodgerblue;
+}
+
+.features .item .name {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.features .item .description {
+    margin-top: 0.1em;
+    margin-bottom: 0.6em;
+}
+
+.information .item .description {
+    color: dodgerblue;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+/*# sourceMappingURL=hotel.css.map */

@@ -15,24 +15,7 @@ let resort = {
   picture: "img/resortpool.jpg",
   longDescription:
     "A divers' paradise in the Baie du Marin, a legendary spot. It's bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
-  url: "resort1.html",
-  reviews: [
-    {
-      description:
-        "Spectacular property. Excellent staff! Can’t wait to come back! Counting down the days till my next holiday there",
-      author: "Oscar Vazquez"
-    },
-    {
-      description:
-        "This is one of the best islands in the Caribbean. The resort has a beautiful beach and the water sports are great.",
-      author: "Alyssa Mincer"
-    },
-    {
-      description:
-        "Amazing stay at Les Boucaniers. Incredible GO team, beautiful village, spectacular food.",
-      author: "Kera Pezzuti"
-    }
-  ]
+  url: "resort1.html"
 };
 
 $(document).ready(function() {
@@ -49,6 +32,10 @@ $(document).ready(function() {
 
     $("#price").text(`$ ${resort.price}`);
     $("#comfort-level").text(`${resort.comfortLevel} stars`);
+    $("#available-dates").html(
+      `${resort.startDate.replace(/-/g, "/")} to 
+      ${resort.endDate.replace(/-/g, "/")}`
+    );
     $("#activities").text(
       `${resort.activities.toString().replace(/,/g, ", ")}`
     );
@@ -65,9 +52,22 @@ $(document).ready(function() {
       `img/user-picture/male-${num}.svg`
     );
 
+    $.getJSON("./resources/reviews.json", function(data) {
+      let num = Math.floor(Math.random() * 3 + 2);
+
+      $(".male-author-1 .author .name").text(data["maleAuthors"][num]);
+      $(".female-author-1 .author .name").text(data["femaleAuthors"][num]);
+      $(".female-author-2 .author .name").text(data["femaleAuthors"][num - 1]);
+
+      $(".male-author-1 .box .description").text(data["reviews"][num]);
+      $(".female-author-1 .box .description").text(data["reviews"][num + 1]);
+      $(".female-author-2 .box .description").text(data["reviews"][num - 1]);
+    });
+
     $(".female-author-1 .author .date").text(
       new Date(+new Date() - Math.floor(Math.random() * 10000000000))
     );
+
     $(".female-author-1 .author .rounded-circle").prop(
       "src",
       `img/user-picture/female-${num}.svg`
@@ -96,23 +96,15 @@ $(document).ready(function() {
     let hotelImageArray = [];
 
     for (let i = 1; i < 9; i++) {
-      hotelImageArray.push(`<div class="col-sm-6 col-md-4 col-lg-3 item photo-container">
+      hotelImageArray.push(
+        `<div class="col-sm-6 col-md-4 col-lg-3 item photo-container">
             <a href="${imageBaseUrl}/hotel-${i}.jpeg" data-lightbox="photos">
               <img class="img-fluid" src="${imageBaseUrl}/hotel-${i}.jpeg" />
             </a>
-          </div>`);
+          </div>`
+      );
     }
 
     $(".photos").html(hotelImageArray);
-
-    // $.each(data['resorts'], function (key, val) {
-    //     console.log(val.id);
-    //     console.log(val.destination);
-    //     console.log("hello")
-    // })
-  });
-
-  $("#myModal").on("shown.bs.modal", function() {
-    $("#myInput").trigger("focus");
   });
 });

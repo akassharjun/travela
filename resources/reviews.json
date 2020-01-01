@@ -1,0 +1,27 @@
+{
+  "maleAuthors": [
+    "John Legend",
+    "Martin Solvig",
+    "Mark Zucker",
+    "Dennis Roys",
+    "Aaron Peiris",
+    "Fred d'Almond",
+    "Saul Goodman"
+  ],
+  "femaleAuthors": [
+    "Emma Clarkson",
+    "Taylor Swift",
+    "Brie Larson",
+    "Demi Donagle",
+    "Martina d'Capprio",
+    "Fredika d'Angelo"
+  ],
+  "reviews": [
+    "Emma Clarkson",
+    "Taylor Swift",
+    "Brie Larson",
+    "Demi Donagle",
+    "Martina d'Capprio",
+    "Fredika d'Angelo"
+  ]
+}

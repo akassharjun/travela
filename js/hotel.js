@@ -36,16 +36,12 @@ let resort = {
 };
 
 $(document).ready(function() {
-  console.log("hello");
-  $.getJSON("./resources/fake.json", function(data) {
-    resort = data["resorts"][0];
+  let selectedHotelIndex = localStorage.getItem("selectedHotelIndex");
 
-    console.log(data);
-    console.log(data["resorts"]);
+  selectedHotelIndex = selectedHotelIndex == null ? 1 : selectedHotelIndex;
 
-    console.log(resort);
-
-    console.log("hello");
+  $.getJSON("./resources/hotels.json", function(data) {
+    resort = data["resorts"][selectedHotelIndex];
 
     $("#hotel-name").text(resort.name);
     $("#hotel-location").text(`${resort.location},  ${resort.destination}`);
@@ -53,14 +49,14 @@ $(document).ready(function() {
 
     $("#price").text(`$ ${resort.price}`);
     $("#comfort-level").text(`${resort.comfortLevel} stars`);
-    $("#activities").text(`${resort.activities}`);
+    $("#activities").text(
+      `${resort.activities.toString().replace(/,/g, ", ")}`
+    );
 
     $(document).prop("title", `${resort.name}`);
 
-    let num = Math.floor(Math.random() * 28 + 1);
+    let num = Math.floor(Math.random() * 28 + 2);
 
-    $(".male-author-1 .box .description").text(resort.reviews[0].description);
-    $(".male-author-1 .author .name").text(resort.reviews[0].author);
     $(".male-author-1 .author .date").text(
       new Date(+new Date() - Math.floor(Math.random() * 10000000000))
     );
@@ -69,8 +65,6 @@ $(document).ready(function() {
       `img/user-picture/male-${num}.svg`
     );
 
-    $(".female-author-1 .box .description").text(resort.reviews[1].description);
-    $(".female-author-1 .author .name").text(resort.reviews[1].author);
     $(".female-author-1 .author .date").text(
       new Date(+new Date() - Math.floor(Math.random() * 10000000000))
     );
@@ -79,8 +73,6 @@ $(document).ready(function() {
       `img/user-picture/female-${num}.svg`
     );
 
-    $(".female-author-2 .box .description").text(resort.reviews[2].description);
-    $(".female-author-2 .author .name").text(resort.reviews[2].author);
     $(".female-author-2 .author .date").text(
       new Date(+new Date() - Math.floor(Math.random() * 10000000000))
     );
@@ -93,14 +85,34 @@ $(document).ready(function() {
       `${resort.name}, ${resort.location},  ${resort.destination}`
     );
 
-    // console.log(`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}&zoom=15`);
-    //
+    let imageBaseUrl = `img/hotels/${resort.name
+      .toLowerCase()
+      .replace(/ /g, "-")}`;
+
+    $(".hotel-hero-image").attr("src", `${imageBaseUrl}/hotel-1.jpeg`);
+
     // $('#google-map').prop('src', `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15`)
+
+    let hotelImageArray = [];
+
+    for (let i = 1; i < 9; i++) {
+      hotelImageArray.push(`<div class="col-sm-6 col-md-4 col-lg-3 item photo-container">
+            <a href="${imageBaseUrl}/hotel-${i}.jpeg" data-lightbox="photos">
+              <img class="img-fluid" src="${imageBaseUrl}/hotel-${i}.jpeg" />
+            </a>
+          </div>`);
+    }
+
+    $(".photos").html(hotelImageArray);
 
     // $.each(data['resorts'], function (key, val) {
     //     console.log(val.id);
     //     console.log(val.destination);
     //     console.log("hello")
     // })
+  });
+
+  $("#myModal").on("shown.bs.modal", function() {
+    $("#myInput").trigger("focus");
   });
 });

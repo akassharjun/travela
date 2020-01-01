@@ -82,12 +82,16 @@ select {
   font-weight: 600 !important;
   justify-content: center;
   text-align: center;
+  /*color: black;*/
+  text-transform: uppercase;
   /* orange-gradient */
   background: linear-gradient(100.5deg, #f8a170 14.73%, #ffcd61 97.52%);
   box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
   border: 0;
   border-radius: 100px;
 }
+
+/*4:47 */
 
 .col-sm-6 {
   margin-bottom: 2em;

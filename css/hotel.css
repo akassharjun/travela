@@ -21,6 +21,19 @@
   color: dodgerblue;
 }
 
+.iconify {
+  margin: 2px 0 5px 0;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+.feature-pricing {
+  text-transform: uppercase;
+  color: dodgerblue;
+  margin-top: 10px;
+}
+
 .hotel-details {
   display: flex;
   flex-direction: column;
@@ -78,29 +91,12 @@ h5 {
 
 .photo-container {
   border: 0;
-  /*margin: 10px;*/
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/*.photo {*/
-/*  !*border: 1px solid white;*!*/
-/*  object-fit: cover;*/
-/*  !*height: 15vh;*!*/
-/*  !*width: 30vw;*!*/
-/*}*/
-
 .photo-container .img-fluid {
-  /*height: 15vh;*/
   object-fit: cover;
-  /*width: 30vw;*/
-  /*max-width: 100% !important;*/
-  /*min-width: 100%;*/
-  /*min-height: 0.01px;*/
-  /*width: 100vw;*/
-  /*height: 15vh;*/
   height: 150px;
   width: 100%;
 }
-
-/*# sourceMappingURL=hotel.css.map */

@@ -1,19 +1,53 @@
+/*#navigation-bar {*/
+/*  padding: 1% 20% 1% 20%;*/
+/*  !*background: transparent;*!*/
+/*  !*z-index: 1;*!*/
+/*  !*width: 80vw;*!*/
+/*  !*background: rebeccapurple;*!*/
+/*}*/
+
+#brand-logo {
+  width: 170px;
+  height: 80px;
+}
+
 #navigation-bar {
-  padding: 1% 20% 1% 20%;
-  /*background: transparent;*/
-  /*z-index: 1;*/
-  /*width: 80vw;*/
-  /*background: rebeccapurple;*/
+  padding: 1% 6% 1% 6%;
+  background: transparent;
+  z-index: 1;
+}
+
+@media (max-height: 600px) {
+  #navigation-bar {
+    padding: 1% 3% 1% 3%;
+  }
 }
 
 @media (max-width: 600px) {
-  #navigation-bar {
-    padding: 0.5% 2.5% 0.5% 2.5%;
-    z-index: 1;
+  #brand-logo {
+    width: 120px;
+    height: 50px;
   }
 
-  #brand-logo {
-    width: 140px;
-    height: 75px;
+  #navigation-bar {
+    padding: 1% 4% 1% 4%;
   }
 }
+
+/*@media (max-width: 600px) {*/
+/*  !*#navigation-bar {*!*/
+/*  !*  padding: 0.5% 2.5% 0.5% 2.5%;*!*/
+/*  !*  z-index: 1;*!*/
+/*  !*}*!*/
+
+/*  !*#brand-logo {*!*/
+/*  !*  width: 140px;*!*/
+/*  !*  height: 75px;*!*/
+/*  !*}*!*/
+
+/*  #navigation-bar {*/
+/*    padding: 1% 3% 1% 3%;*/
+/*    !*background: rgba(0, 0, 0, 0.75);*!*/
+/*    !*backdrop-filter: blur(1px);*!*/
+/*  }*/
+/*}*/

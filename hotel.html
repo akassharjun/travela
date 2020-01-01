@@ -16,6 +16,7 @@
 
     <!-- Loading the font library -->
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css"></script>
 
     <!-- Loading the Bootstrap library -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -71,10 +72,9 @@
         </ul>
       </div>
     </nav>
-    <div style="height: 1px; width: 100%; background: gray;opacity: 0.5"></div>
+    <div class="line-divider"></div>
 
     <div class="container hotel-details mt-5">
-      <!--    hotel-hero-image-->
       <img
         class="hotel-hero-image"
         style="object-fit: cover;"
@@ -101,17 +101,17 @@
         </h2>
         <div class="row justify-content-center information">
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
-            <h4 class="name mb-2">Comfort Level</h4>
+            <h5 class="name mb-2">Comfort Level</h5>
             <p class="description" id="comfort-level">5 stars</p>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
-            <h4 class="name mb-2">Activities</h4>
+            <h5 class="name mb-2">Activities</h5>
             <p class="description" id="activities">
               Water Skiing, Sailing, Tennis
             </p>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
-            <h4 class="name mb-2">Price</h4>
+            <h5 class="name mb-2">Price</h5>
             <p class="description" id="price">$150</p>
           </div>
         </div>
@@ -130,67 +130,87 @@
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
               <i class="fa fa-map-marker icon feature-icon"></i>
-              <h5 class="name">Works everywhere</h5>
+              <span
+                class="iconify"
+                data-icon="bx:bx-wifi"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Internet</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                WiFi is available in all areas.
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <p class="feature-pricing">Free</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-clock-o icon feature-icon"></i>
-              <h5 class="name">Always available</h5>
+              <span
+                class="iconify"
+                data-icon="mdi:broom"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Cleaning services</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                Daily housekeeping.
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <p class="feature-pricing">Free</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-list-alt icon"></i>
-              <h5 class="name">Customizable</h5>
+              <span
+                class="iconify"
+                data-icon="ic:baseline-business-center"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Business facilities</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                Fax/photocopying.
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <a href="#" class="learn-more">CHARGES MAY APPLY</a>
             </div>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-leaf icon feature-icon"></i>
-              <h5 class="name">Organic</h5>
+              <span
+                class="iconify"
+                data-icon="dashicons:businesswoman"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Reception services</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                ATM/cash machine on site
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <p class="feature-pricing">Free</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-plane icon feature-icon"></i>
-              <h5 class="name">Fast</h5>
+              <span
+                class="iconify"
+                data-icon="fa-solid:shuttle-van"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Transportation</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                Airport shuttle services.
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <p class="feature-pricing">Charges may apply</p>
             </div>
           </div>
+
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-phone icon feature-icon"></i>
-              <h5 class="name">Mobile-first</h5>
+              <span
+                class="iconify"
+                data-icon="map:pet-store"
+                data-inline="false"
+              ></span>
+              <h5 class="name">Pets</h5>
               <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu.
+                Pets are allowed.
               </p>
-              <a href="#" class="learn-more">Learn more »</a>
+              <a href="#" class="learn-more">CHARGES MAY APPLY</a>
             </div>
           </div>
         </div>
@@ -317,41 +337,37 @@
         </div>
       </div>
     </div>
-    <div style="height: 1px; width: 100%; background: gray;opacity: 0.5"></div>
+    <div class="line-divider"></div>
 
     <div class="footer-basic mt-4 mb-4">
       <footer>
         <div class="social">
           <a href="#"
-            ><span
-              class="iconify"
-              data-icon="foundation:social-instagram"
-              data-inline="false"
-            ></span
-          ></a>
+            ><img
+              class="social-icon"
+              src="img/social-icons/facebook.svg"
+              alt="facebook"
+          /></a>
           <a href="#"
-            ><span
-              class="iconify"
-              data-icon="foundation:social-snapchat"
-              data-inline="false"
-            ></span
-          ></a>
+            ><img
+              class="social-icon"
+              src="img/social-icons/twitter.svg"
+              alt="twitter"
+          /></a>
           <a href="#"
-            ><span
-              class="iconify"
-              data-icon="foundation:social-twitter"
-              data-inline="false"
-            ></span
-          ></a>
+            ><img
+              class="social-icon"
+              src="img/social-icons/snapchat.svg"
+              alt="snapchat"
+          /></a>
           <a href="#"
-            ><span
-              class="iconify"
-              data-icon="typcn:social-facebook"
-              data-inline="false"
-            ></span
-          ></a>
+            ><img
+              class="social-icon"
+              src="img/social-icons/instagram.svg"
+              alt="instagram"
+          /></a>
         </div>
-        <ul class="list-inline mt-1">
+        <ul class="list-inline mt-2">
           <li class="list-inline-item">
             <a class="footer-anchor" href="#">Destinations</a>
           </li>
@@ -362,10 +378,11 @@
             <a class="footer-anchor" href="#">Contact Us</a>
           </li>
         </ul>
-        <h5 class="text-center" id="copyright-text">Travella 2020</h5>
+        <h5 class="text-center" id="copyright-text">
+          &copy;&nbsp;&nbsp;&nbsp;Travella
+          <span style="font-family: AirbnbCereal,serif">2020</span>
+        </h5>
       </footer>
     </div>
   </body>
-
-  <!-- Mirrored from travela-2018387.firebaseapp.com/hotel.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2019 14:54:35 GMT -->
 </html>

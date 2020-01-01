@@ -6,12 +6,8 @@
 #destination-location {
   font-weight: 800;
   text-transform: uppercase;
+  color: dodgerblue !important;
 }
-
-/*#destination-location {*/
-/*    text-transform: capitalize;*/
-/*    color: dodgerblue !important;*/
-/*}*/
 
 .destination-details {
   display: flex;
@@ -19,9 +15,33 @@
   align-self: center;
 }
 
-@media (max-width: 600px) {
+.item {
+  margin-bottom: 5em;
+}
+
+.img-fluid {
+  height: 20vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
   .destination-hero-image {
     height: 30vh;
+  }
+
+  .item {
+    margin-bottom: 2em;
+  }
+
+  .item .name {
+    margin-top: 8px;
+    font-size: larger;
+  }
+
+  .item .description {
+    margin-top: 2px;
+    /*font-size: small;*/
   }
 
   .d-block {

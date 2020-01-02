@@ -43,6 +43,9 @@ $(document).ready(function() {
       .val();
   });
 
+  // $("#price").selectmenu();
+  // $("#activities").selectmenu();
+
   $("#search-button").click(function() {
     console.log(
       `Destination : ${destination}\nComfort Level : ${comfortLevel}\n
@@ -55,6 +58,8 @@ $(document).ready(function() {
     localStorage.setItem("endDate", `${endDate}`);
     localStorage.setItem("activity", `${activity}`);
     localStorage.setItem("priceRange", `${priceRange}`);
+
+    window.location = "./resort-listing.html";
     return false;
   });
 

@@ -21,7 +21,7 @@ let resort = {
 $(document).ready(function() {
   let selectedHotelIndex = localStorage.getItem("selectedHotelIndex");
 
-  selectedHotelIndex = selectedHotelIndex == null ? 1 : selectedHotelIndex;
+  selectedHotelIndex = selectedHotelIndex == null ? 0 : selectedHotelIndex - 1;
 
   $.getJSON("./resources/hotels.json", function(data) {
     resort = data["resorts"][selectedHotelIndex];
@@ -91,7 +91,10 @@ $(document).ready(function() {
 
     $(".hotel-hero-image").attr("src", `${imageBaseUrl}/hotel-1.jpeg`);
 
-    // $('#google-map').prop('src', `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15`)
+    $("#google-map").prop(
+      "src",
+      `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15`
+    );
 
     let hotelImageArray = [];
 

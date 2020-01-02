@@ -33,64 +33,43 @@ $(document).ready(function() {
 
   $("#destination-name").text(destinationName);
   $("#destination-description").text(destinations[destinationName]);
+  $(document).prop("title", `${destinationName}`);
 
   let imageSource =
-    "img/destinations/" + destinationName.toLowerCase().replace(" ", "-");
-
-  if (imageSource === "indian-ocean") {
-    imageSource += ".webp";
-  } else {
-    imageSource += ".jpg";
-  }
-
-  console.log(imageSource);
+    "img/destinations/" +
+    destinationName.toLowerCase().replace(" ", "-") +
+    ".jpg";
 
   $(".destination-hero-image").attr("src", imageSource);
 
   $("#destination-location").text(destionationHotspots[destinationName]);
 
-  let hotels = [];
+  let resorts = [];
 
   $.getJSON("./resources/hotels.json", function(data) {
     $.each(data["resorts"], function(key, val) {
       if (val.destination === destinationName) {
-        console.log(val);
-        hotels.push(val);
-        console.log("list is " + hotels);
+        console.log("list is " + resorts);
+        resorts.push(val);
       }
     });
 
     let htmlHotels = "";
 
-    $.each(hotels, function(index, value) {
-      console.log(`value is ${value}`);
-      console.log(
-        `img/hotels/${value.name
-          .toLowerCase()
-          .replace(" ", "-")
-          .replace(" ", "-")
-          .replace(" ", "-")
-          .replace(" ", "-")
-          .replace(" ", "-")
-          .replace(" ", "-")}/hotel-1.jpeg`
-      );
+    $.each(resorts, function(index, value) {
       htmlHotels += `
-        <div class="col-sm-6 item"> 
+        <div class="col-sm-6 item resort"> 
               <div class="row"> 
                 <div class="col-md-12 col-lg-5"> 
-                <a href="#" class="hotel-image" aria-valuetext="Asia">
+                <a href="#" class="resort-image" aria-valuetext="Asia">
                     <img class="img-fluid" src="img/hotels/${value.name
                       .toLowerCase()
-                      .replace(" ", "-")
-                      .replace(" ", "-")
-                      .replace(" ", "-")
-                      .replace(" ", "-")
-                      .replace(" ", "-")}/hotel-1.jpeg"/>
+                      .replace(/ /g, "-")}/hotel-1.jpeg"/>
                 </a>
               </div>
               <div class="col">
-                <h4 class="name">${value.name}</h4>
-                <p class="description" style="max-lines: 2;   text-overflow: ellipsis;">${
+                <h4 class="resort-name">${value.name}</h4>
+                <p class="resort-description" style="max-lines: 2;   text-overflow: ellipsis;">${
                   value.shortDescription
                 }</p>
               </div>
@@ -99,5 +78,42 @@ $(document).ready(function() {
     });
 
     $(".hotels").html(htmlHotels);
+
+    $(".resort").click(function() {
+      console.log(
+        resorts.find(
+          element =>
+            element.name ===
+            $(this)
+              .children(".col")
+              .children(".resort-name")
+              .text()
+        )
+      );
+      console.log(
+        $(this)
+          .children(".row")
+          .children(".col")
+          .children(".resort-name")
+          .text()
+      );
+
+      let resort = resorts.find(
+        element =>
+          element.name ===
+          $(this)
+            .children(".row")
+            .children(".col")
+            .children(".resort-name")
+            .text()
+      );
+
+      console.log(resort);
+
+      let id = resort.id.replace(/resort/g, "");
+
+      localStorage.setItem("selectedHotelIndex", parseInt(id));
+      window.location = "./hotel.html";
+    });
   });
 });

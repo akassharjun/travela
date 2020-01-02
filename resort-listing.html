@@ -28,7 +28,8 @@
       type="text/css"
       href="css/common/navigation-bar.css"
     />
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/resort-listing.css" />
+    <script src="js/resort-listing.js"></script>
 
     <title>Travela</title>
   </head>
@@ -76,12 +77,103 @@
     </nav>
     <div class="line-divider"></div>
 
-    <aside>
-      <h1>sad</h1>
-    </aside>
+    <div class="container search-criteria">
+      <div id="search-criteria-card">
+        <form>
+          <div class="input-row">
+            <div>
+              <label for="destination">Destination</label>
+              <select class="input-item" name="destination" id="destination">
+                <option value="" disabled selected>Select a destination</option>
+                <option value="asia">Asia</option>
+                <option value="the alps">The Alps</option>
+                <option value="north america">North America</option>
+                <option value="central america">Central America</option>
+                <option value="south america">South America</option>
+                <option value="europe">Europe</option>
+                <option value="caribbean">The Caribbean</option>
+                <option value="indian ocean">Indian Ocean</option>
+              </select>
+            </div>
+            <div>
+              <label for="comfort-level">Comfort Level</label>
+              <select
+                class="input-item"
+                name="comfort-level"
+                id="comfort-level"
+              >
+                <option value="" disabled selected
+                  >Select a comfort level</option
+                >
+                <option value="3">Three Star</option>
+                <option value="4">Four Star</option>
+                <option value="5">Five Star</option>
+              </select>
+            </div>
+            <div>
+              <label for="start-date">Start Date</label>
+              <input
+                type="text"
+                class="input-item"
+                id="start-date"
+                placeholder="Select start date"
+              />
+            </div>
+            <div>
+              <label for="end-date">End Date</label>
+              <input
+                type="text"
+                class="input-item"
+                id="end-date"
+                placeholder="Select end date"
+              />
+            </div>
+            <div>
+              <label for="activities">Activity</label>
+              <select class="input-item" name="activities" id="activities">
+                <option value="" disabled selected>Select an activity</option>
+                <option value="water skiing">Water Skiing</option>
+                <option value="sailing">Sailing</option>
+                <option value="tennis">Tennis</option>
+                <option value="scuba diving">Scuba Diving</option>
+                <option value="golf">Golf</option>
+                <option value="hiking">Hiking</option>
+                <option value="horse riding">Horse Riding</option>
+                <option value="spa">Spa</option>
+              </select>
+            </div>
+            <div>
+              <label for="price">Price Range</label>
+              <select class="input-item" name="price" id="price">
+                <option value="" disabled selected>Select a price range</option>
+                <option>$</option>
+                <option>$$</option>
+                <option>$$$</option>
+                <option>$$$$</option>
+                <option>$$$$$</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
-    <div>
-      <h1>sda</h1>
+    <div class="line-divider"></div>
+
+    <div class="container resort-list mt-5">
+      <div class="resort">
+        <div class="resort-information">
+          <h3 class="resort-name">Resort Name</h3>
+          <p class="resort-location">LOCATION</p>
+        </div>
+      </div>
+      <div class="resort">
+        <div class="resort-information">
+          <h3 class="resort-name">Resort Name</h3>
+          <p class="resort-location">LOCATION</p>
+          <h4 class="resort-price">$1200</h4>
+        </div>
+      </div>
     </div>
 
     <div class="line-divider"></div>

@@ -1,0 +1,154 @@
+body {
+  overflow-x: hidden;
+}
+
+.search-criteria {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#search-criteria-card {
+  color: white;
+  padding: 20px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.input-row div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-item,
+select {
+  border-radius: 10px !important;
+  margin: 0 20px 20px 0;
+}
+
+.input-item {
+  background: #2b2b2b;
+  opacity: 0.5;
+  border: 1px solid grey;
+  width: 12vw;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.input-item::placeholder {
+  color: white;
+}
+
+select {
+  font-size: 17px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: auto;
+}
+
+#search-button {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 50px;
+  /*margin-top: 2.5vh;*/
+  /*margin-bottom: 1vh;*/
+  font-weight: 600 !important;
+  justify-content: center;
+  text-align: center;
+  /*color: black;*/
+  text-transform: uppercase;
+  /* orange-gradient */
+  background: linear-gradient(100.5deg, #f8a170 14.73%, #ffcd61 97.52%);
+  box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
+  border: 0;
+  border-radius: 100px;
+}
+
+label {
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.resort {
+  background: url("../img/hotels/siam-hotel/hotel-1.jpeg") no-repeat bottom;
+  height: 50vh;
+  /*width: 100vw;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  background-size: cover;
+  /*border: 1px solid grey;*/
+}
+
+.resort-information {
+  border: 1px solid dodgerblue;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(40px);
+  border-radius: 0;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resort-location {
+  text-transform: uppercase;
+  color: white;
+}
+
+.heart {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 900px) {
+  .input-row {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .resort-information {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .resort-name {
+    margin: 0;
+    font-size: larger;
+  }
+
+  .resort-location {
+    margin: 0;
+    font-size: small;
+  }
+
+  .resort-price {
+    margin-top: 5px;
+    font-size: larger;
+  }
+
+  .input-item {
+    width: 80vw;
+  }
+
+  #collapse-button {
+    display: initial;
+  }
+}

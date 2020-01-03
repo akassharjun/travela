@@ -43,9 +43,6 @@ $(document).ready(function() {
       .val();
   });
 
-  // $("#price").selectmenu();
-  // $("#activities").selectmenu();
-
   $("#search-button").click(function() {
     console.log(
       `Destination : ${destination}\nComfort Level : ${comfortLevel}\n

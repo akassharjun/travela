@@ -61,23 +61,25 @@ select {
   color: black;
 }
 
-/*.ui-selectmenu-button,*/
-/*!*.ui-button,*!*/
-/*!*.ui-widget,*!*/
-/*	.hasDatepicker,*/
-/*.ui-selectmenu-button-closed,*/
-/*.ui-corner-all {*/
-/*  background: #ffffff;*/
-/*  opacity: 0.4;*/
-/*  width: 30vw;*/
-/*  border: 0;*/
-/*  border-radius: 10px !important;*/
-/*  margin: 0 20px 20px 0;*/
-/*  !*display: flex;*!*/
-/*  !*align-items: center;*!*/
-/*  padding: 10px 16px;*/
-/*  color: black;*/
-/*}*/
+.ui-selectmenu-button,
+	/*.ui-button,*/
+	/*.ui-widget,*/
+.ui-input,
+.input,
+.hasDatepicker,
+.ui-selectmenu-button-closed,
+.ui-corner-all {
+  background: #ffffff;
+  opacity: 0.4;
+  width: 30vw;
+  border: 0;
+  border-radius: 10px !important;
+  margin: 0 20px 20px 0;
+  /*display: flex;*/
+  /*align-items: center;*/
+  padding: 10px 16px;
+  color: black;
+}
 
 /*.ui-selectmenu-text {*/
 /*  color: black;*/

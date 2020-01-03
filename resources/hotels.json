@@ -40,7 +40,7 @@
     {
       "id": "resort3",
       "destination": "Caribbean",
-      "name": "Cabrits Resort & Spa",
+      "name": "Cabrits Resort",
       "location": "Cabrits",
       "comfortLevel": "5",
       "activities": ["tennis", "swimming", "meeting space", "spa"],

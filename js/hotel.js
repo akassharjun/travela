@@ -1,27 +1,25 @@
 let GOOGLE_MAPS_API_KEY = "AIzaSyCxNguVBq1O5oZgQuZ7qFt9q_asf0lJscU";
 
-let resort = {
-  id: "resort1",
-  destination: "Caribbean",
-  name: "Les Boucaniers",
-  location: "Martinique",
-  comfortLevel: "5",
-  activities: ["water skiing", "tennis", "scuba diving", "spa"],
-  price: 1254,
-  startDate: "2017-05-05",
-  endDate: "2019-12-31",
-  shortDescription:
-    "The resort of Les Boucaniers is located on the laid-back beach-covered south coast of the island, and is perfectly placed for Martinique holidays that are both relaxing and awe-inspiring.",
-  picture: "img/resortpool.jpg",
-  longDescription:
-    "A divers' paradise in the Baie du Marin, a legendary spot. It's bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
-  url: "resort1.html"
-};
+let resortLiked = false;
+let favoriteResorts;
+
+// ' '
+// ''
 
 $(document).ready(function() {
   let selectedHotelIndex = localStorage.getItem("selectedHotelIndex");
 
   selectedHotelIndex = selectedHotelIndex == null ? 0 : selectedHotelIndex - 1;
+
+  favoriteResorts = JSON.parse(localStorage.getItem("favoriteResorts"));
+
+  if (favoriteResorts != null) {
+    if (favoriteResorts.includes((selectedHotelIndex + 1).toString())) {
+      resortLiked = true;
+    }
+  } else {
+    favoriteResorts = [];
+  }
 
   $.getJSON("./resources/hotels.json", function(data) {
     resort = data["resorts"][selectedHotelIndex];
@@ -51,6 +49,8 @@ $(document).ready(function() {
       "src",
       `img/user-picture/male-${num}.svg`
     );
+
+    // favoriteResortSetting();
 
     $.getJSON("./resources/reviews.json", function(data) {
       let num = Math.floor(Math.random() * 3 + 2);
@@ -109,5 +109,37 @@ $(document).ready(function() {
     }
 
     $(".photos").html(hotelImageArray);
+
+    let $favoriteIcon = $(".favicon");
+
+    resortLiked
+      ? $favoriteIcon.html(
+          '<span class="iconify" data-icon="emojione:red-heart" data-inline="false"></span>'
+        )
+      : $favoriteIcon.html(
+          '<span class="iconify" data-icon="emojione-monotone:red-heart" data-inline="false"></span>'
+        );
+
+    $favoriteIcon.click(function() {
+      if (resortLiked) {
+        $favoriteIcon.html(
+          '<span class="iconify" data-icon="emojione-monotone:red-heart" data-inline="false"></span>'
+        );
+        resortLiked = false;
+        console.log("unliked");
+        favoriteResorts.pop(
+          favoriteResorts.indexOf(resort.id.replace("resort", ""))
+        );
+      } else {
+        resortLiked = true;
+        console.log("liked");
+        $favoriteIcon.html(
+          '<span class="iconify" data-icon="emojione:red-heart" data-inline="false"></span>'
+        );
+        favoriteResorts.push(resort.id.replace("resort", ""));
+      }
+      localStorage.setItem("favoriteResorts", JSON.stringify(favoriteResorts));
+      // favoriteResortSetting();
+    });
   });
 });

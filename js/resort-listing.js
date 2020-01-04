@@ -81,6 +81,10 @@ $(document).ready(function() {
 
     console.log("I work");
   });
+
+  $(".fav-icon").click(function() {
+    $(this).css("color", "red");
+  });
 });
 
 function openResort() {
@@ -128,14 +132,16 @@ function setResortList() {
           .toLowerCase()
           .replace(/ /g, "-")}/hotel-1.jpeg`;
 
-        htmlHotels += `<div class="resort"  style="background: url(${imgPath}) no-repeat bottom;background-size: cover;" onclick="openResort();">
+        htmlHotels += `
+        <div class="resort"  
+               style="background: url(${imgPath}) no-repeat bottom;background-size: cover;"
+                onclick="openResort();"
+                 >
         <div class="resort-information">
           <h3 class="resort-name">${value.name}</h3>
           <p class="resort-location">${value.location}</p>
            <div style="display: flex;justify-content: space-between">
           <h4 class="resort-price">\$${value.price}</h4>
-                         <i class="fa fa-heart icon fav-icon"></i>
-
           </div>
         </div>
       </div>`;

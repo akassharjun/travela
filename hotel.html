@@ -16,7 +16,13 @@
 	
 	  <!-- Loading the font library -->
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css"></script>
+	  <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css"></script>-->
+	 <link
+			 href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			 rel="stylesheet"
+			 integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			 crossorigin="anonymous"
+	 />
 	
 	  <!-- Loading the Bootstrap library -->
     <script type="text/javascript"
@@ -92,8 +98,15 @@
 		      src="img/destinations/asia.jpg"
 		      alt="First slide"
       />
-      <h1 id="hotel-name"
-          class="text-left mt-4 mb-0">Berjaya Hotel</h1>
+      <div style="display: flex;justify-content: space-between;align-items: center">
+         <h1 id="hotel-name"
+             class="text-left mt-4 mb-0">Berjaya Hotel</h1>
+        <span class="favicon">
+        <span class="iconify" data-icon="emojione-monotone:red-heart" data-inline="false"></span>
+        </span>
+<!--        <i class="fa
+fa-heart icon fav-icon"></i>-->
+      </div>
       <p id="hotel-location"
          class="text-left mt-0 mb-3">location</p>
       <p id="hotel-description"
@@ -155,7 +168,6 @@
         <div class="row justify-content-center features">
           <div class="col-sm-6 col-md-5 col-lg-4 item p-3">
             <div class="box">
-              <i class="fa fa-map-marker icon feature-icon"></i>
               <span
 		              class="iconify"
 		              data-icon="bx:bx-wifi"

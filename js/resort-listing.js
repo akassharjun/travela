@@ -115,7 +115,19 @@ function setResortList() {
         if (val.comfortLevel === comfortLevel) {
           if (val.activities.includes("swimming")) {
             if (val.price < prices[priceRange]) {
-              console.log(val);
+              let resortStartDate = moment(
+                val.startDate,
+                "YYYY-MM-DD"
+              ).toDate();
+              let resortEndDate = moment(val.endDate, "YYYY-MM-DD").toDate();
+              let filterStartDate = moment(startDate, "DD/MM/YYYY").toDate();
+              let filterEndDate = moment(endDate, "DD/MM/YYYY").toDate();
+
+              console.log(resortStartDate);
+              console.log(resortEndDate);
+              console.log(filterStartDate);
+              console.log(filterEndDate);
+
               resortList.push(val);
             }
           }

@@ -28,7 +28,6 @@ $(document).ready(function() {
   $activity.val(activity.toLowerCase());
   $price.val(priceRange);
 
-  console.log("checking");
   setResortList();
 
   $destination.change(function() {
@@ -94,8 +93,8 @@ function openResort() {
 
   let id = resort.id.replace(/resort/g, "");
 
-  localStorage.setItem("selectedHotelIndex", parseInt(id));
-  window.location = "./hotel.html";
+  localStorage.setItem("selectedResortId", parseInt(id));
+  window.location = "../resort-page.html";
 }
 
 function setResortList() {
@@ -109,7 +108,7 @@ function setResortList() {
 
   let resortList = [];
 
-  $.getJSON("./resources/hotels.json", function(data) {
+  $.getJSON("./resources/resorts.json", function(data) {
     $.each(data["resorts"], function(key, val) {
       if (val.destination.toLowerCase() === destination.toLowerCase()) {
         if (val.comfortLevel === comfortLevel) {
@@ -123,12 +122,18 @@ function setResortList() {
               let filterStartDate = moment(startDate, "DD/MM/YYYY").toDate();
               let filterEndDate = moment(endDate, "DD/MM/YYYY").toDate();
 
-              console.log(resortStartDate);
-              console.log(resortEndDate);
-              console.log(filterStartDate);
-              console.log(filterEndDate);
-
-              resortList.push(val);
+              if (
+                resortStartDate < filterStartDate ||
+                resortStartDate.toDateString() ===
+                  filterStartDate.toDateString()
+              ) {
+                if (
+                  resortEndDate > filterEndDate ||
+                  resortEndDate.toDateString() === filterEndDate.toDateString()
+                ) {
+                  resortList.push(val);
+                }
+              }
             }
           }
         }
@@ -136,15 +141,15 @@ function setResortList() {
     });
 
     resorts = resortList;
-    let htmlHotels = "";
+    let resortHtmlContent = "";
 
     if (resortList.length !== 0) {
       $.each(resortList, function(index, value) {
-        let imgPath = `img/hotels/${value.name
+        let imgPath = `img/resorts/${value.name
           .toLowerCase()
-          .replace(/ /g, "-")}/hotel-1.jpeg`;
+          .replace(/ /g, "-")}/resort-1.jpeg`;
 
-        htmlHotels += `
+        resortHtmlContent += `
         <div class="resort"  
                style="background: url(${imgPath}) no-repeat bottom;background-size: cover;"
                 onclick="openResort();"
@@ -159,9 +164,9 @@ function setResortList() {
       </div>`;
       });
     } else {
-      htmlHotels = `<div style="display: flex;justify-content: center;"><p style="margin-top: 150px;margin-bottom: 180px;text-align: center;">There are no resorts for this search criteria</p></div>`;
+      resortHtmlContent = `<div style="display: flex;justify-content: center;"><p style="margin-top: 150px;margin-bottom: 180px;text-align: center;">There are no resorts for this search criteria</p></div>`;
     }
 
-    $(".resort-list").html(htmlHotels);
+    $(".resort-list").html(resortHtmlContent);
   });
 }

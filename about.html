@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from travela-2018387.firebaseapp.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2019 14:54:18 GMT -->
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
   <head>
     <meta
       name="viewport"
@@ -12,15 +7,21 @@
     />
 
     <!-- Loading the jQuery & jQuery UI libraries -->
-    <script src="../code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link
-      href="../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
       rel="stylesheet"
     />
 
-    <!-- Loading the font library -->
-    <script src="../code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <!-- Loading the icon library -->
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
     <!-- Loading the Bootstrap library -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -28,22 +29,26 @@
 
     <!-- Loading local stylesheets & scripts -->
     <link rel="stylesheet" type="text/css" href="css/common/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/common/navigation-bar.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/about.css" />
-    <!--    <script src="js/index.js"></script>-->
 
     <title>Travela</title>
   </head>
   <body>
     <nav id="navigation-bar" class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img
+          id="brand-logo"
           src="img/logo-together.svg"
           width="170px"
           height="80px"
           class="d-inline-block align-top"
           alt="logo"
         />
-        <!--        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
       </a>
       <button
         class="navbar-toggler"
@@ -62,33 +67,36 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item p-3">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="index.html"
               >Destinations<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active p-3">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item  p-3">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
+    <div class="line-divider"></div>
 
-    <div class="article-clean mb-5 mt-4">
+    <div class="article-clean mb-4 mt-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-xl-12 offset-lg-1 offset-xl-0">
             <div class="text">
-              <img class="img-fluid" src="img/maldives.jpg" />
+              <img class="img-fluid" src="img/team.jpg" />
               <h2 class="text-left mt-3">About Us</h2>
               <p>
-                Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula
-                rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu
-                eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum
-                primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae.
+                Our creative agency consists of a close-knit group of passionate
+                innovators, designers, self-starters, and producers. Our gifted
+                team prides ourselves in honing our hard-earned expertise,
+                creating rewarding client experiences, and perfecting our craft.
+                Endlessly curious, creatively inspired and strategically-minded.
+                Our leadership team speaks 9 languages but shares the common
+                tongue of hustle + passion.
               </p>
             </div>
           </div>
@@ -110,56 +118,83 @@
         <div class="row people">
           <div class="col-md-6 col-lg-4 item">
             <div class="box">
-              <img class="rounded-circle" src="img/1.html" />
-              <h3 class="text-left">Ben Johnson</h3>
-              <!--                    <p class="title">Musician</p>-->
-              <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                finibus est, et interdum justo suscipit id. Etiam dictum feugiat
-                tellus, a semper massa.
-              </p>
-              <div class="social">
-                <a href="#"><i class="fa fa-facebook-official"></i></a
-                ><a href="#"><i class="fa fa-twitter"></i></a
-                ><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
+              <img class="rounded-circle" src="img/user-picture/male-1.svg" />
+              <h3 class="name team-member">Ben Johnson</h3>
+              <p class="title">Front End Lead</p>
+              <!--              <p class="description">-->
+              <!--                Aenean tortor est, vulputate quis leo in, vehicula rhoncus-->
+              <!--                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius-->
+              <!--                finibus est, et interdum justo suscipit id. Etiam dictum feugiat-->
+              <!--                tellus, a semper massa.-->
+              <!--              </p>-->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 item">
             <div class="box">
-              <img class="rounded-circle" src="2.html" />
-              <h3 class="name">Emily Clark</h3>
-              <p class="title">Artist</p>
-              <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                finibus est, et interdum justo suscipit id. Etiam dictum feugiat
-                tellus, a semper massa.
-              </p>
-              <div class="social">
-                <a href="#"><i class="fa fa-facebook-official"></i></a
-                ><a href="#"><i class="fa fa-twitter"></i></a
-                ><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
+              <img class="rounded-circle" src="img/user-picture/female-2.svg" />
+              <h3 class="name team-member">Emily Clark</h3>
+              <p class="title">Back End Lead</p>
+              <!--              <p class="description">-->
+              <!--                Aenean tortor est, vulputate quis leo in, vehicula rhoncus-->
+              <!--                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius-->
+              <!--                finibus est, et interdum justo suscipit id. Etiam dictum feugiat-->
+              <!--                tellus, a semper massa.-->
+              <!--              </p>-->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 item">
             <div class="box">
-              <img class="rounded-circle" src="3.html" />
-              <h3 class="name">Carl Kent</h3>
-              <p class="title">Stylist</p>
-              <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                finibus est, et interdum justo suscipit id. Etiam dictum feugiat
-                tellus, a semper massa.
-              </p>
-              <div class="social">
-                <a href="#"><i class="fa fa-facebook-official"></i></a
-                ><a href="#"><i class="fa fa-twitter"></i></a
-                ><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
+              <img class="rounded-circle" src="img/user-picture/female-5.svg" />
+              <h3 class="name team-member">Carla Kent</h3>
+              <p class="title">Business Lead</p>
+              <!--              <p class="description">-->
+              <!--                Carla holds an MBA with focus on International Business and has-->
+              <!--                extensive experience in operations and business development. Her-->
+              <!--                core skills are marketing strategy, process optimization, web-->
+              <!--                design, and marketing. Her business administration background-->
+              <!--                means she always keeps an eye on ROI and CPA, all while being-->
+              <!--                able to come up with creative solutions.-->
+              <!--              </p>-->
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img class="rounded-circle" src="img/user-picture/female-8.svg" />
+              <h3 class="name team-member">Juliana Christ</h3>
+              <p class="title">UI/UX Designer</p>
+              <!--              <p class="description">-->
+              <!--                Passionate about print design and typography, Juliana is a-->
+              <!--                multidisciplinary designer. She provides graphic, editorial-->
+              <!--                design, and illustrations to companies and people at scale.-->
+              <!--              </p>-->
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img class="rounded-circle" src="img/user-picture/male-5.svg" />
+              <h3 class="name team-member">Marko Igalesis</h3>
+              <p class="title">SEO Analyst</p>
+              <!--              <p class="description">-->
+              <!--                Marko is a Politics & Communications graduate. His primary focus-->
+              <!--                lies on social media & content marketing, but his experience in-->
+              <!--                SEO means he is able to find the most effective angle and format-->
+              <!--                when telling a story online.-->
+              <!--              </p>-->
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img
+                class="rounded-circle"
+                src="img/user-picture/female-15.svg"
+              />
+              <h3 class="name team-member">Rickie Lee</h3>
+              <p class="title">Instagram Influencer</p>
+              <!--              <p class="description">-->
+              <!--                Rickie Lee is a Berlin-based Australian writer and editor who-->
+              <!--                specializes in content creation, copywriting, inbound marketing,-->
+              <!--                and social media for multiple industries.-->
+              <!--              </p>-->
             </div>
           </div>
         </div>

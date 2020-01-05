@@ -1,28 +1,58 @@
-* {
-  color: white;
-  font-family: "Netflix Sans", serif;
-  font-weight: 200;
+.team-member {
+  margin: 10px 0 0 0;
 }
 
-body {
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(1px);
+.title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: dodgerblue;
+  font-weight: bold;
 }
 
-#navigation-bar {
-  padding: 0.5% 12% 0.5% 12%;
-  background: transparent;
-  z-index: 1;
-  /*background: rgba(0, 0, 0, 0.75);*/
-  /*backdrop-filter: blur(1px);*/
+.team-boxed {
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+.item {
+  padding: 24px 16px;
+  border: 1px solid grey;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.rounded-circle {
+  height: 10vh;
+  width: 10vh;
 }
 
 @media (max-width: 600px) {
-  #navigation-bar {
-    padding: 0.5% 2.5% 0.5% 2.5%;
-    z-index: 1;
-    /*background: rgba(0, 0, 0, 0.75);*/
-    /*backdrop-filter: blur(1px);*/
+  h2 {
+    font-size: larger;
+  }
+
+  h3,
+  h4,
+  h5 {
+    font-size: large;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  p #description {
+    font-size: small;
   }
 }
 

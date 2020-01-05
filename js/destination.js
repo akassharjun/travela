@@ -17,7 +17,7 @@ let destinations = {
     "The Indian Ocean is the third-largest of the world's oceanic divisions, covering 19.8% of the water on the Earth's surface."
 };
 
-let destionationHotspots = {
+let destinationHotspots = {
   Asia: "Bali, Indonesia",
   "The Alps": "Lucerne, Switzerland",
   "North America": "Times Square, New York City",
@@ -42,29 +42,28 @@ $(document).ready(function() {
 
   $(".destination-hero-image").attr("src", imageSource);
 
-  $("#destination-location").text(destionationHotspots[destinationName]);
+  $("#destination-location").text(destinationHotspots[destinationName]);
 
   let resorts = [];
 
-  $.getJSON("./resources/hotels.json", function(data) {
+  $.getJSON("./resources/resorts.json", function(data) {
     $.each(data["resorts"], function(key, val) {
       if (val.destination === destinationName) {
-        console.log("list is " + resorts);
         resorts.push(val);
       }
     });
 
-    let htmlHotels = "";
+    let resortHtmlContent = "";
 
     $.each(resorts, function(index, value) {
-      htmlHotels += `
-        <div class="col-sm-6 item resort"> 
+      resortHtmlContent += `
+        <div class="col-sm-6 item resort" > 
               <div class="row"> 
                 <div class="col-md-12 col-lg-5"> 
                 <a href="#" class="resort-image" aria-valuetext="Asia">
-                    <img class="img-fluid" src="img/hotels/${value.name
+                    <img class="img-fluid" src="img/resorts/${value.name
                       .toLowerCase()
-                      .replace(/ /g, "-")}/hotel-1.jpeg"/>
+                      .replace(/ /g, "-")}/resort-1.jpeg"/>
                 </a>
               </div>
               <div class="col">
@@ -77,7 +76,8 @@ $(document).ready(function() {
         </div>`;
     });
 
-    $(".hotels").html(htmlHotels);
+    $(".resorts").html(resortHtmlContent);
+    // onclick="alert(event.srcElement.getAttribute())"
 
     $(".resort").click(function() {
       console.log(
@@ -108,12 +108,10 @@ $(document).ready(function() {
             .text()
       );
 
-      console.log(resort);
-
       let id = resort.id.replace(/resort/g, "");
-
-      localStorage.setItem("selectedHotelIndex", parseInt(id));
-      window.location = "./hotel.html";
+      console.log("id is " + id);
+      localStorage.setItem("selectedResortId", parseInt(id));
+      window.location = "../resort-page.html";
     });
   });
 });

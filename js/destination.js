@@ -111,7 +111,7 @@ $(document).ready(function() {
       let id = resort.id.replace(/resort/g, "");
       console.log("id is " + id);
       localStorage.setItem("selectedResortId", parseInt(id));
-      window.location = "../resort-page.html";
+      window.location = "resort-page.html";
     });
   });
 });

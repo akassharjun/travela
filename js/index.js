@@ -24,7 +24,7 @@ function onResortClicked() {
     .replace(/resort/g, "");
 
   localStorage.setItem("selectedResortId", parseInt(id));
-  window.location = "/resort-page.html";
+  window.location = "resort-page.html";
 }
 
 $(document).ready(function() {

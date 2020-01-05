@@ -49,9 +49,16 @@ $(document).ready(function() {
 
     $(".resort-hero-image").attr("src", `${imageBaseUrl}/resort-1.jpeg`);
 
-    $("#google-map").prop(
-      "src",
-      `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15`
+    $("#google-maps-container").html(
+      `<iframe
+          allowfullscreen
+          frameborder="0"
+          height="450"
+          id="google-map"
+          src="https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15"
+          style="background: white;display: block"
+          width="100%"
+        ></iframe>`
     );
 
     let resortImages = [];

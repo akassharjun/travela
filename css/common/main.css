@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap");
+
 @font-face {
   font-family: "AirbnbCereal";
   src: url("../../font/AirbnbCereal-Book.ttf") format("truetype"),
     url("../../font/AirbnbCereal-Medium.ttf") format("truetype"),
     url("../../font/AirbnbCereal-Black.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "NetflixSans";
   src: url("../../font/netflix_sans_bold.otf") format("opentype");
   src: url("../../font/netflix_sans_light.otf") format("opentype");
 }
+
 * {
   color: white;
   font-family: NetflixSans, sans-serif;
@@ -18,8 +21,8 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.95);
   margin: 0 auto;
   padding: 0;
 }
@@ -39,9 +42,9 @@ h6 {
 }
 
 .iconify {
-  width: 50px;
   height: 50px;
   padding: 0.4em;
+  width: 50px;
 }
 
 .social {
@@ -51,14 +54,14 @@ h6 {
 }
 
 .footer-anchor {
-  padding-right: 1em;
-  padding-left: 1em;
   color: white;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #copyright-text {
-  margin-top: 3em;
   margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 
 .footer-basic {
@@ -68,28 +71,28 @@ h6 {
 }
 
 .social-icon {
-  width: 80px;
   height: 80px;
   padding: 1.4em 0.4em;
+  width: 80px;
 }
 
 .line-divider {
-  height: 1px;
-  width: 100%;
   background: gray;
+  height: 1px;
   opacity: 0.5;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   #copyright-text {
-    margin-top: 2em;
     margin-bottom: 0.5em;
+    margin-top: 2em;
   }
 
   .social-icon {
-    width: 65px;
     height: 65px;
     padding: 1em 0.2em;
+    width: 65px;
   }
 
   .footer-anchor {

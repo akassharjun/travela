@@ -1,13 +1,17 @@
+:root {
+  --border-style: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 .team-member {
   margin: 10px 0 0 0;
 }
 
 .title {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  color: dodgerblue;
+  color: goldenrod;
   font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
 .team-boxed {
@@ -19,15 +23,45 @@
 }
 
 .item {
+  border: var(--border-style);
+  border-right: 0;
+  border-bottom: 0;
+  border-spacing: 0;
   padding: 24px 16px;
-  border: 1px solid grey;
+}
+
+.item:nth-child(3) {
+  border: var(--border-style);
+  border-bottom: 0;
+  border-spacing: 0;
+  padding: 24px 16px;
+}
+
+.item:nth-child(4) {
+  border: var(--border-style);
+  border-right: 0;
+  border-spacing: 0;
+  padding: 24px 16px;
+}
+
+.item:nth-child(5) {
+  border: var(--border-style);
+  border-right: 0;
+  border-spacing: 0;
+  padding: 24px 16px;
+}
+
+.item:last-child {
+  border: var(--border-style);
+  border-spacing: 0;
+  padding: 24px 16px;
 }
 
 .box {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   justify-items: center;
 }
 

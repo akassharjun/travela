@@ -94,7 +94,7 @@ function openResort() {
   let id = resort.id.replace(/resort/g, "");
 
   localStorage.setItem("selectedResortId", parseInt(id));
-  window.location = "../resort-page.html";
+  window.location = "resort-page.html";
 }
 
 function setResortList() {

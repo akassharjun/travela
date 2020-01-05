@@ -4,15 +4,15 @@
 }
 
 #destination-location {
+  color: dodgerblue !important;
   font-weight: 800;
   text-transform: uppercase;
-  color: dodgerblue !important;
 }
 
 .destination-details {
+  align-self: center;
   display: flex;
   flex-direction: column;
-  align-self: center;
 }
 
 .item {
@@ -21,8 +21,8 @@
 
 .img-fluid {
   height: 20vh;
-  width: 100vw;
   object-fit: cover;
+  width: 100vw;
 }
 
 @media (max-width: 800px) {
@@ -35,8 +35,8 @@
   }
 
   .item .name {
-    margin-top: 8px;
     font-size: larger;
+    margin-top: 8px;
   }
 
   .item .description {

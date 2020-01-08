@@ -54,22 +54,28 @@ $(document).ready(function() {
 
   $("#search-button").click(function() {
     if (destination === "") {
-      return alert("Please select a destination!");
+      alert("Please select a destination!");
+      return false;
     }
     if (comfortLevel === "") {
-      return alert("Please select a destination!");
+      alert("Please select a comfort level!");
+      return false;
     }
     if (startDate === "") {
-      return alert("Please select a destination!");
+      alert("Please select the start date!");
+      return false;
     }
     if (endDate === "") {
-      return alert("Please select a destination!");
+      alert("Please select the end date!");
+      return false;
     }
     if (activity === "") {
-      return alert("Please select a destination!");
+      alert("Please select an activity!");
+      return false;
     }
     if (priceRange === "") {
-      return alert("Please select a destination!");
+      alert("Please select a price range!");
+      return false;
     }
 
     localStorage.setItem("destination", `${destination}`);
@@ -84,10 +90,8 @@ $(document).ready(function() {
   });
 
   $(".destination-image").click(function() {
-    console.log("hi");
     let destination = $(this).attr("aria-valuetext");
     localStorage.setItem("destination", `${destination}`);
-    // console.log(localStorage.getItem("destination"));
     window.location = "./destination.html";
     return false;
   });
@@ -125,9 +129,6 @@ $(document).ready(function() {
               </div>
             </div>
           </div>`;
-
-      console.log(favoriteResorts);
-      console.log(favoriteResortsHTML);
 
       $(".resort-list").html(favoriteResortsHTML);
     });

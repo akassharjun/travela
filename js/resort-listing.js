@@ -111,17 +111,6 @@ function setResortList() {
               let filterStartDate = moment(startDate, "MM/DD/YYYY").toDate();
               let filterEndDate = moment(endDate, "MM/DD/YYYY").toDate();
 
-              console.log(val);
-
-              console.log(
-                "Start Date : " +
-                  resortStartDate +
-                  "\n Filter Start Date : " +
-                  filterStartDate
-              );
-              console.log(resortStartDate < filterStartDate);
-              console.log(resortEndDate > filterEndDate);
-
               if (
                 resortStartDate < filterStartDate ||
                 resortStartDate.toDateString() ===
@@ -134,7 +123,6 @@ function setResortList() {
                   resortList.push(val);
                 }
               }
-              console.log("Resort List : " + resortList);
             }
           }
         }

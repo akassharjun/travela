@@ -76,7 +76,12 @@ select {
   border-radius: 10px !important;
   margin: 0 20px 20px 0;
   padding: 10px 16px;
-  color: black !important;
+  background-color: #000;
+  color: white !important;
+}
+
+select.form-control {
+  color: white;
 }
 
 .input-item {
@@ -110,7 +115,6 @@ select {
   flex-direction: row;
   font-weight: 600 !important;
   justify-content: center;
-  /*color: black;*/
   margin-bottom: 1vh;
   /* orange-gradient */
   margin-top: 2.5vh;

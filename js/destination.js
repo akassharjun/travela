@@ -80,24 +80,6 @@ $(document).ready(function() {
     // onclick="alert(event.srcElement.getAttribute())"
 
     $(".resort").click(function() {
-      console.log(
-        resorts.find(
-          element =>
-            element.name ===
-            $(this)
-              .children(".col")
-              .children(".resort-name")
-              .text()
-        )
-      );
-      console.log(
-        $(this)
-          .children(".row")
-          .children(".col")
-          .children(".resort-name")
-          .text()
-      );
-
       let resort = resorts.find(
         element =>
           element.name ===
@@ -109,7 +91,6 @@ $(document).ready(function() {
       );
 
       let id = resort.id.replace(/resort/g, "");
-      console.log("id is " + id);
       localStorage.setItem("selectedResortId", parseInt(id));
       window.location = "resort-page.html";
     });

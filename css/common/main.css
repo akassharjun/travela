@@ -59,6 +59,12 @@ h6 {
   padding-right: 1em;
 }
 
+.footer-anchor:hover {
+  color: goldenrod;
+  text-underline: transparent;
+  }
+
+
 #copyright-text {
   margin-bottom: 1.5em;
   margin-top: 2em;

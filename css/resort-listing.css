@@ -102,6 +102,7 @@ label {
   width: 40%;
 }
 
+.ui-datepicker-month,
 .ui-widget,
 .ui-datepicker-header {
   background: #000;

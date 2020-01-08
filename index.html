@@ -61,7 +61,7 @@
           alt="logo"
           class="d-inline-block align-top"
           id="brand-logo"
-          src="img/logo-together.svg"
+          src="img/logo-full.svg"
         />
       </a>
       <button
@@ -110,6 +110,7 @@
                   <option disabled selected value=""
                     >Select a destination</option
                   >
+                  <option value="all">All</option>
                   <option value="asia">Asia</option>
                   <option value="the alps">The Alps</option>
                   <option value="north america">North America</option>
@@ -130,6 +131,7 @@
                   <option disabled selected value=""
                     >Select a comfort level</option
                   >
+                  <option value="0">Any</option>
                   <option value="3">Three Star</option>
                   <option value="4">Four Star</option>
                   <option value="5">Five Star</option>
@@ -144,6 +146,7 @@
                   id="start-date"
                   placeholder="Select start date"
                   type="text"
+                  autocomplete="off"
                 />
               </div>
 
@@ -154,6 +157,7 @@
                   id="end-date"
                   placeholder="Select end date"
                   type="text"
+                  autocomplete="off"
                 />
               </div>
             </div>
@@ -162,6 +166,7 @@
                 <label for="activities">Activity</label>
                 <select class="input-item" id="activities" name="activities">
                   <option disabled selected value="">Select an activity</option>
+                  <option>Any</option>
                   <option>Water Skiing</option>
                   <option>Sailing</option>
                   <option>Gym</option>
@@ -181,6 +186,7 @@
                   <option disabled selected value=""
                     >Select a price range</option
                   >
+                  <option>Any</option>
                   <option>$</option>
                   <option>$$</option>
                   <option>$$$</option>

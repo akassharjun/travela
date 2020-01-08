@@ -114,6 +114,10 @@ label {
 	text-transform: uppercase;
 	}
 
+.resort:hover {
+	cursor: pointer;
+	}
+
 .iconify {
 	color: rebeccapurple;
 	}

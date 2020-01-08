@@ -25,6 +25,10 @@
 	width: 40px;
 	}
 
+.iconify:hover {
+	cursor: pointer;
+	}
+
 .feature-pricing {
 	color: goldenrod;
 	margin-top: 10px;

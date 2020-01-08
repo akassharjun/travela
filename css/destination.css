@@ -25,6 +25,10 @@
 	width: 100vw;
 	}
 
+.resort:hover {
+	cursor: pointer;
+	}
+
 @media (max-width: 800px) {
 	.destination-hero-image {
 		height: 30vh;

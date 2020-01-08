@@ -6,7 +6,12 @@
       "name": "Les Boucaniers",
       "location": "Martinique",
       "comfortLevel": "5",
-      "activities": ["water skiing", "tennis", "scuba diving", "spa"],
+      "activities": [
+        "water skiing",
+        "tennis",
+        "scuba diving",
+        "spa"
+      ],
       "price": 1254,
       "startDate": "2015-05-05",
       "endDate": "2023-12-31",
@@ -43,7 +48,12 @@
       "name": "Cabrits Resort",
       "location": "Cabrits",
       "comfortLevel": "5",
-      "activities": ["tennis", "swimming", "meeting space", "spa"],
+      "activities": [
+        "tennis",
+        "swimming",
+        "meeting space",
+        "spa"
+      ],
       "price": 3099,
       "startDate": "2014-02-12",
       "endDate": "2023-12-31",
@@ -58,7 +68,12 @@
       "name": "Hotel des Bains Kempinski",
       "location": "St.Moritz",
       "comfortLevel": "4",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 2499,
       "startDate": "2012-06-15",
       "endDate": "2023-12-31",
@@ -95,7 +110,12 @@
       "name": "The Capitol Hotel",
       "location": "Singapore",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 3049,
       "startDate": "1930-03-15",
       "endDate": "2023-12-31",
@@ -110,7 +130,12 @@
       "name": "Palais Hansen",
       "location": "Vienna",
       "comfortLevel": "4",
-      "activities": ["swimming", "sauna", "spa", "sailing"],
+      "activities": [
+        "swimming",
+        "sauna",
+        "spa",
+        "sailing"
+      ],
       "price": 950,
       "startDate": "2013-09-03",
       "endDate": "2023-12-31",
@@ -125,7 +150,13 @@
       "name": "Siam Hotel",
       "location": "Bankok",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna", "spa", "water skiing"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa",
+        "water skiing"
+      ],
       "price": 2499,
       "startDate": "2008-01-19",
       "endDate": "2023-12-31",
@@ -140,7 +171,12 @@
       "name": "Hotel Adlon",
       "location": "Berlin",
       "comfortLevel": "4",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 1099,
       "startDate": "2015-07-25",
       "endDate": "2023-12-31",
@@ -155,7 +191,13 @@
       "name": "Gran Hotel Manzana",
       "location": "St.Moritz",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna", "spa", "scuba diving"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa",
+        "scuba diving"
+      ],
       "price": 3099,
       "startDate": "2000-07-09",
       "endDate": "2023-12-31",
@@ -170,7 +212,11 @@
       "name": "San Clemente Palace",
       "location": "Venice",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna"
+      ],
       "price": 2099,
       "startDate": "2013-06-01",
       "endDate": "2023-12-31",
@@ -208,7 +254,12 @@
       "name": "Hotel Corvinus",
       "location": "Budapest",
       "comfortLevel": "3",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 500,
       "startDate": "1998-12-03",
       "endDate": "2023-12-31",
@@ -223,7 +274,12 @@
       "name": "Grand Hotel Shanghai",
       "location": "Shanghai",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 2499,
       "startDate": "2013-05-15",
       "endDate": "2023-12-31",
@@ -238,7 +294,12 @@
       "name": "Hotel Grand Arena Bansko",
       "location": "Bansko",
       "comfortLevel": "5",
-      "activities": ["gym", "swimming", "sauna", "spa"],
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa"
+      ],
       "price": 1000,
       "startDate": "2011-01-12",
       "endDate": "2023-12-31",
@@ -246,6 +307,50 @@
       "picture": "img/infinityPool.jpg",
       "longDescription": "We look forward to welcoming you to an oasis of luxury, comfort and tranquility in Bansko - the most modern winter resort in the Balkans. Our five-star hotel is open year-round and comprises Alpine-style rooms and suites, superb conference facilities, lavish dining services and an award-winning spa centre.",
       "url": "resort1.html"
+    },
+    {
+      "id": "resort16",
+      "destination": "North America",
+      "name": "Bay Watch Resort",
+      "location": "South Carolina",
+      "comfortLevel": "3",
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa",
+        "water skiing"
+      ],
+      "price": 1000,
+      "startDate": "2011-01-12",
+      "endDate": "2023-12-31",
+      "shortDescription": "Overlooking the Atlantic Ocean, this North Myrtle Beach resort features 9 indoor and outdoor pools, 7 hot tubs, and 3 restaurants",
+      "picture": "img/infinityPool.jpg",
+      "longDescription": "Its spacious studios and suites offer a private balcony. Barefoot Landing is 3.5 km away. A microwave, refridgerator and coffee-making facilities are included in each studio and suite. There is a safety deposit box and seating area. The suites offer ocean views and fully equipped kitchens. Guests can work out in the modern fitness centre or use the business centre at Bay Watch Resort & Conference Center. A convenience store is also on site.",
+      "url": "resort1.html"
+    },
+    {
+      "id": "resort17",
+      "destination": "North America",
+      "name": "Fairmont Chateau Whistler",
+      "location": "Canada",
+      "comfortLevel": "5",
+      "activities": [
+        "gym",
+        "swimming",
+        "sauna",
+        "spa",
+        "water skiing",
+        "hiking"
+      ],
+      "price": 4000,
+      "startDate": "2011-01-12",
+      "endDate": "2023-12-31",
+      "shortDescription": "Offering hot tubs, saunas, and Eucalyptus steam rooms, this luxury hotel offers convenient ski access at the base of Blackcomb Mountain.",
+      "picture": "img/infinityPool.jpg",
+      "longDescription": "Guests of Fairmont Chateau Whistler can choose from casual fare to fine dining in the hotel's various restaurants. After dinner, guests can enjoy live entertainment and a classic cocktail in the Mallard Lounge and Terrace. Whistler Village is just 600 m away. Enjoy summer swimming at Lost Lake, 4 minutes’ drive away from Fairmont Chateau Whistler.",
+      "url": "resort1.html"
     }
+
   ]
 }

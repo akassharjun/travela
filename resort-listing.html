@@ -8,28 +8,33 @@
 	
 	  <!-- favicon for the webpage -->
     <link
+		    href="img/favicon/apple-touch-icon.png"
 		    rel="apple-touch-icon"
 		    sizes="180x180"
-		    href="img/favicon/apple-touch-icon.png"
     />
     <link
-		    rel="icon"
-		    type="image/png"
-		    sizes="32x32"
 		    href="img/favicon/favicon-32x32.png"
+		    rel="icon"
+		    sizes="32x32"
+		    type="image/png"
     />
     <link
-		    rel="icon"
-		    type="image/png"
-		    sizes="16x16"
 		    href="img/favicon/favicon-16x16.png"
+		    rel="icon"
+		    sizes="16x16"
+		    type="image/png"
     />
-    <link rel="manifest"
-          href="img/favicon/site.webmanifest"/>
-    <meta name="msapplication-TileColor"
-          content="#da532c"/>
-    <meta name="theme-color"
-          content="#ffffff"/>
+    <link href="img/favicon/site.webmanifest"
+          rel="manifest"/>
+    <meta content="#da532c"
+          name="msapplication-TileColor"/>
+    <meta content="#ffffff"
+          name="theme-color"/>
+	
+	  <!-- Restricts external files that can be loaded -->
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'self' ajax.googleapis.com code.jquery.com code.iconify.design stackpath.bootstrapcdn.com momentjs.com 'unsafe-inline'; img-src *; style-src 'self' ajax.googleapis.com code.jquery.com code.iconify.design 'unsafe-inline'; style-src-elem 'self' ajax.googleapis.com fonts.googleapis.com code.jquery.com code.iconify.design stackpath.bootstrapcdn.com 'unsafe-inline'; child-src 'self' www.google.com code.iconify.design;">
+	
 	
 	  <!-- Loading the jQuery & jQuery UI libraries -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

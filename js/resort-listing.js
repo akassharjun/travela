@@ -8,7 +8,7 @@ let resorts = [];
 
 $(document).ready(function () {
 
-  destination = localStorage.getItem("destination");
+    destination = localStorage.getItem("destination");
     comfortLevel = localStorage.getItem("comfortLevel");
     startDate = localStorage.getItem("startDate");
     endDate = localStorage.getItem("endDate");
@@ -62,55 +62,47 @@ $(document).ready(function () {
 
         setResortList();
     });
-
-    // $startDate.datepicker({
-    //     onSelect: function (dateText) {
-    //         startDate = dateText;
-    //     }
-    // });
-    //
-    // $endDate.datepicker({
-    //     onSelect: function (dateText) {
-    //         endDate = dateText;
-    //     }
-    // });
 });
 
-$( function() {
-  var dateFormat = "mm/dd/yy",
-      from = $( "#start-date" )
-          .datepicker({
-            defaultDate: "+1d",
+$(function () {
+    var dateFormat = "mm/dd/yy",
+        from = $("#start-date")
+            .datepicker({
+                defaultDate: "+1d",
+                changeMonth: true,
+                numberOfMonths: 2
+            })
+            .on("change", function () {
+                startDate = $(this).datepicker("getDate");
+                window.localStorage.setItem('startDate', $.datepicker.formatDate(dateFormat, startDate));
+
+                setResortList();
+                to.datepicker("option", "minDate", getDate(this));
+            }),
+        to = $("#end-date").datepicker({
+            defaultDate: "+1w",
             changeMonth: true,
             numberOfMonths: 2
-          })
-          .on( "change", function() {
-            let currentDate = $(this).datepicker("getDate");
-            window.localStorage.setItem('arrival-date', $.datepicker.formatDate(dateFormat, currentDate));
-            to.datepicker( "option", "minDate", getDate( this ) );
-          }),
-      to = $( "#end-date" ).datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
-        numberOfMonths: 2
-      })
-          .on( "change", function() {
-            let departureDate = $(this).datepicker("getDate");
-            window.localStorage.setItem('departure-date', $.datepicker.formatDate(dateFormat, departureDate));
-            from.datepicker( "option", "maxDate", getDate( this ) );
-          });
+        })
+            .on("change", function () {
+                endDate = $(this).datepicker("getDate");
+                window.localStorage.setItem('endDate', $.datepicker.formatDate(dateFormat, endDate));
 
-  function getDate( element ) {
-    var date;
-    try {
-      date = $.datepicker.parseDate( dateFormat, element.value );
-    } catch( error ) {
-      date = null;
+                setResortList();
+                from.datepicker("option", "maxDate", getDate(this));
+            });
+
+    function getDate(element) {
+        var date;
+        try {
+            date = $.datepicker.parseDate(dateFormat, element.value);
+        } catch (error) {
+            date = null;
+        }
+
+        return date;
     }
-
-    return date;
-  }
-} );
+});
 
 function openResort() {
     let val = $(event)[0].toElement.innerText.split(/(?:\r\n|\r|\n)/g);

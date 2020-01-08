@@ -1,168 +1,168 @@
 body {
-  overflow-x: hidden;
-}
+	overflow-x: hidden;
+	}
 
 .search-criteria {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
+	margin-bottom: 10px;
+	margin-top: 10px;
+	}
 
 #search-criteria-card {
-  color: white;
-  padding: 20px;
-}
+	color: white;
+	padding: 20px;
+	}
 
 .input-row {
-  align-items: baseline;
-  display: flex;
-  justify-content: center;
-}
+	align-items: baseline;
+	display: flex;
+	justify-content: center;
+	}
 
 .input-row div {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-}
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	}
 
 .input-item,
 select {
-  border-radius: 10px !important;
-  margin: 0 20px 20px 0;
-}
+	border-radius: 10px !important;
+	margin: 0 20px 20px 0;
+	}
 
 .input-item {
-  align-items: center;
-  background: #2b2b2b;
-  border: 1px solid grey;
-  color: white;
-  display: flex;
-  opacity: 0.5;
-  padding: 10px;
-  width: 12vw;
-}
+	align-items: center;
+	background: #2B2B2B;
+	border: 1px solid grey;
+	color: white;
+	display: flex;
+	opacity: 0.5;
+	padding: 10px;
+	width: 12vw;
+	}
 
 .input-item::placeholder {
-  color: white;
-}
+	color: white;
+	}
 
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: auto;
-  font-size: 17px;
-}
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: auto;
+	font-size: 17px;
+	}
 
 #search-button {
-  background: linear-gradient(100.5deg, #f8a170 14.73%, #ffcd61 97.52%);
-  border: 0;
-  border-radius: 100px;
-  /*margin-top: 2.5vh;*/
-  /*margin-bottom: 1vh;*/
-  box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
-  display: flex;
-  flex-direction: row;
-  /*color: black;*/
-  font-weight: 600 !important;
-  /* orange-gradient */
-  justify-content: center;
-  padding: 10px 50px;
-  text-align: center;
-  text-transform: uppercase;
-}
+	background: linear-gradient(100.5deg, #F8A170 14.73%, #FFCD61 97.52%);
+	border: 0;
+	border-radius: 100px;
+	/*margin-top: 2.5vh;*/
+	/*margin-bottom: 1vh;*/
+	box-shadow: 0 10px 40px rgba(248, 161, 112, 0.2);
+	display: flex;
+	flex-direction: row;
+	/*color: black;*/
+	font-weight: 600 !important;
+	/* orange-gradient */
+	justify-content: center;
+	padding: 10px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	}
 
 label {
-  color: goldenrod;
-  font-size: small;
-  text-transform: uppercase;
-}
+	color: goldenrod;
+	font-size: small;
+	text-transform: uppercase;
+	}
 
 .resort {
-  background: url("../img/resorts/siam-hotel/resort-1.jpeg") no-repeat bottom;
-  background-size: cover;
-  /*width: 100vw;*/
-  display: flex;
-  flex-direction: column;
-  height: 50vh;
-  justify-content: flex-end;
-  margin-bottom: 50px;
-}
+	background: url("../img/resorts/siam-hotel/resort-1.jpeg") no-repeat bottom;
+	background-size: cover;
+	/*width: 100vw;*/
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+	}
 
 .resort-information {
-  backdrop-filter: blur(40px);
-  background: rgba(0, 0, 0, 0.75);
-  border: 1px solid goldenrod;
-  border-radius: 0;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  padding: 15px;
-  width: 40%;
-}
+	backdrop-filter: blur(40px);
+	background: rgba(0, 0, 0, 0.75);
+	border: 1px solid goldenrod;
+	border-radius: 0;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding: 15px;
+	width: 40%;
+	}
 
 .ui-datepicker-month,
 .ui-widget,
 .ui-datepicker-header {
-  background: #000;
-  color: white !important;
-}
+	background: #000;
+	color: white !important;
+	}
 
 .resort-location {
-  color: white;
-  text-transform: uppercase;
-}
+	color: white;
+	text-transform: uppercase;
+	}
 
 .iconify {
-  color: rebeccapurple;
-}
+	color: rebeccapurple;
+	}
 
 .heart {
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  width: 30px;
-}
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	}
 
 .input-item::placeholder {
-  color: black;
-}
+	color: black;
+	}
 
 @media (max-width: 900px) {
-  .input-row {
-    align-items: center;
-    flex-direction: column;
-    justify-items: center;
-  }
-
-  .resort-information {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    padding: 8px;
-    width: 80%;
-  }
-
-  .resort-name {
-    font-size: larger;
-    margin: 0;
-  }
-
-  .resort-location {
-    font-size: small;
-    margin: 0;
-  }
-
-  .resort-price {
-    font-size: larger;
-    margin-top: 5px;
-  }
-
-  .input-item {
-    width: 80vw;
-  }
-
-  #collapse-button {
-    display: initial;
-  }
-}
+	.input-row {
+		align-items: center;
+		flex-direction: column;
+		justify-items: center;
+		}
+	
+	.resort-information {
+		margin-bottom: 5px;
+		margin-left: 5px;
+		padding: 8px;
+		width: 80%;
+		}
+	
+	.resort-name {
+		font-size: larger;
+		margin: 0;
+		}
+	
+	.resort-location {
+		font-size: small;
+		margin: 0;
+		}
+	
+	.resort-price {
+		font-size: larger;
+		margin-top: 5px;
+		}
+	
+	.input-item {
+		width: 80vw;
+		}
+	
+	#collapse-button {
+		display: initial;
+		}
+	}

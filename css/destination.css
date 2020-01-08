@@ -1,50 +1,50 @@
 .destination-hero-image {
-  height: 60vh;
-  object-fit: cover;
-}
+	height: 60vh;
+	object-fit: cover;
+	}
 
 #destination-location {
-  color: goldenrod !important;
-  font-weight: 800;
-  text-transform: uppercase;
-}
+	color: goldenrod !important;
+	font-weight: 800;
+	text-transform: uppercase;
+	}
 
 .destination-details {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-}
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	}
 
 .item {
-  margin-bottom: 5em;
-}
+	margin-bottom: 5em;
+	}
 
 .img-fluid {
-  height: 20vh;
-  object-fit: cover;
-  width: 100vw;
-}
+	height: 20vh;
+	object-fit: cover;
+	width: 100vw;
+	}
 
 @media (max-width: 800px) {
-  .destination-hero-image {
-    height: 30vh;
-  }
-
-  .item {
-    margin-bottom: 2em;
-  }
-
-  .item .name {
-    font-size: larger;
-    margin-top: 8px;
-  }
-
-  .item .description {
-    margin-top: 2px;
-    /*font-size: small;*/
-  }
-
-  .d-block {
-    object-fit: cover;
-  }
-}
+	.destination-hero-image {
+		height: 30vh;
+		}
+	
+	.item {
+		margin-bottom: 2em;
+		}
+	
+	.item .name {
+		font-size: larger;
+		margin-top: 8px;
+		}
+	
+	.item .description {
+		margin-top: 2px;
+		/*font-size: small;*/
+		}
+	
+	.d-block {
+		object-fit: cover;
+		}
+	}

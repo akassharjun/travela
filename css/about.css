@@ -1,93 +1,93 @@
 :root {
-  --border-style: 1px solid gray;
-}
+	--border-style: 1px solid gray;
+	}
 
 .team-member {
-  margin: 10px 0 0 0;
-}
+	margin: 10px 0 0 0;
+	}
 
 .title {
-  color: goldenrod;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
+	color: goldenrod;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 5px;
+	text-transform: uppercase;
+	}
 
 .team-boxed {
-  margin-bottom: 40px;
-}
+	margin-bottom: 40px;
+	}
 
 .name {
-  font-size: 1.5em;
-}
+	font-size: 1.5em;
+	}
 
 .item {
-  border: var(--border-style);
-  border-right: 0;
-  border-bottom: 0;
-  border-spacing: 0;
-  padding: 24px 16px;
-}
+	border: var(--border-style);
+	border-bottom: 0;
+	border-right: 0;
+	border-spacing: 0;
+	padding: 24px 16px;
+	}
 
 .item:nth-child(3) {
-  border: var(--border-style);
-  border-bottom: 0;
-  border-spacing: 0;
-  padding: 24px 16px;
-}
+	border: var(--border-style);
+	border-bottom: 0;
+	border-spacing: 0;
+	padding: 24px 16px;
+	}
 
 .item:nth-child(4) {
-  border: var(--border-style);
-  border-right: 0;
-  border-spacing: 0;
-  padding: 24px 16px;
-}
+	border: var(--border-style);
+	border-right: 0;
+	border-spacing: 0;
+	padding: 24px 16px;
+	}
 
 .item:nth-child(5) {
-  border: var(--border-style);
-  border-right: 0;
-  border-spacing: 0;
-  padding: 24px 16px;
-}
+	border: var(--border-style);
+	border-right: 0;
+	border-spacing: 0;
+	padding: 24px 16px;
+	}
 
 .item:last-child {
-  border: var(--border-style);
-  border-spacing: 0;
-  padding: 24px 16px;
-}
+	border: var(--border-style);
+	border-spacing: 0;
+	padding: 24px 16px;
+	}
 
 .box {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	}
 
 .rounded-circle {
-  height: 10vh;
-  width: 10vh;
-}
+	height: 10vh;
+	width: 10vh;
+	}
 
 @media (max-width: 600px) {
-  h2 {
-    font-size: larger;
-  }
-
-  h3,
-  h4,
-  h5 {
-    font-size: large;
-  }
-
-  p {
-    font-size: small;
-  }
-
-  p #description {
-    font-size: small;
-  }
-}
+	h2 {
+		font-size: larger;
+		}
+	
+	h3,
+	h4,
+	h5 {
+		font-size: large;
+		}
+	
+	p {
+		font-size: small;
+		}
+	
+	p #description {
+		font-size: small;
+		}
+	}
 
 /*# sourceMappingURL=about.css.map */

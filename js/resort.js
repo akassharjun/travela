@@ -53,7 +53,7 @@ $(document).ready(function() {
       `<iframe
           allowfullscreen
           frameborder="0"
-          height="450"
+          height="500"
           id="google-map"
           src="https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${resort.destination}+${resort.location}+${resort.name}&zoom=15"
           style="background: white;display: block"
@@ -91,20 +91,17 @@ $(document).ready(function() {
           '<span class="iconify" data-icon="emojione-monotone:red-heart" data-inline="false"></span>'
         );
         resortLiked = false;
-        console.log("unliked");
         favoriteResorts.pop(
           favoriteResorts.indexOf(resort.id.replace("resort", ""))
         );
       } else {
         resortLiked = true;
-        console.log("liked");
         $favoriteIcon.html(
           '<span class="iconify" data-icon="emojione:red-heart" data-inline="false"></span>'
         );
         favoriteResorts.push(resort.id.replace("resort", ""));
       }
       localStorage.setItem("favoriteResorts", JSON.stringify(favoriteResorts));
-      // favoriteResortSetting();
     });
   });
 });

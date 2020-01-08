@@ -73,17 +73,6 @@ $(document).ready(function() {
       endDate = dateText;
     }
   });
-
-  $(".heart").click(function() {
-    $(this).css("color", "red");
-    $(this).css("border", "1px solid blue");
-
-    console.log("I work");
-  });
-
-  $(".fav-icon").click(function() {
-    $(this).css("color", "red");
-  });
 });
 
 function openResort() {
@@ -119,8 +108,19 @@ function setResortList() {
                 "YYYY-MM-DD"
               ).toDate();
               let resortEndDate = moment(val.endDate, "YYYY-MM-DD").toDate();
-              let filterStartDate = moment(startDate, "DD/MM/YYYY").toDate();
-              let filterEndDate = moment(endDate, "DD/MM/YYYY").toDate();
+              let filterStartDate = moment(startDate, "MM/DD/YYYY").toDate();
+              let filterEndDate = moment(endDate, "MM/DD/YYYY").toDate();
+
+              console.log(val);
+
+              console.log(
+                "Start Date : " +
+                  resortStartDate +
+                  "\n Filter Start Date : " +
+                  filterStartDate
+              );
+              console.log(resortStartDate < filterStartDate);
+              console.log(resortEndDate > filterEndDate);
 
               if (
                 resortStartDate < filterStartDate ||
@@ -134,6 +134,7 @@ function setResortList() {
                   resortList.push(val);
                 }
               }
+              console.log("Resort List : " + resortList);
             }
           }
         }

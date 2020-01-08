@@ -66,18 +66,18 @@ select {
   color: black !important;
 }
 
-/*.ui-selectmenu-button,*/
-/*.ui-button,*/
-/*.input,*/
-/*.hasDatepicker,*/
-/*.ui-selectmenu-button-closed,*/
-/*.ui-corner-all {*/
-/*  border: 0;*/
-/*  border-radius: 10px !important;*/
-/*  margin: 0 20px 20px 0;*/
-/*  padding: 10px 16px;*/
-/*  color: black !important;*/
-/*}*/
+.ui-selectmenu-button,
+.ui-button,
+.input,
+.hasDatepicker,
+.ui-selectmenu-button-closed,
+.ui-corner-all {
+  border: 0;
+  border-radius: 10px !important;
+  margin: 0 20px 20px 0;
+  padding: 10px 16px;
+  color: black !important;
+}
 
 .input-item {
   align-items: center;

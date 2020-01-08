@@ -71,7 +71,7 @@ select {
 }
 
 label {
-  color: dodgerblue;
+  color: goldenrod;
   font-size: small;
   text-transform: uppercase;
 }
@@ -90,7 +90,7 @@ label {
 .resort-information {
   backdrop-filter: blur(40px);
   background: rgba(0, 0, 0, 0.75);
-  border: 1px solid dodgerblue;
+  border: 1px solid goldenrod;
   border-radius: 0;
   color: white;
   display: flex;

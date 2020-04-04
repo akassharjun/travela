@@ -2,16 +2,16 @@
 
 
 ## Home Page
-![Home Page](/home-page.png)
+![Home Page](assets/home-page.png)
 
 ## Search By Destination
-![Destination Page](/search-by-destination.png)
+![Destination Page](assets/search-by-destination.png)
 
 ## Filter Resorts by options
-![Filter Resorts](/filtering-hotels.png)
+![Filter Resorts](assets/filtering-hotels.png)
 
 ## Resort Page
-![Resort Page](/resort-page.png)
+![Resort Page](assets/resort-page.png)
 
 ## Contact Us Page
-![Contact Us Page](/contact-us.png)
+![Contact Us Page](assets/contact-us.png)

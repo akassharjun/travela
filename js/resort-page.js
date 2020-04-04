@@ -1,4 +1,4 @@
-let GOOGLE_MAPS_API_KEY = "AIzaSyCxNguVBq1O5oZgQuZ7qFt9q_asf0lJscU";
+let GOOGLE_MAPS_API_KEY = "ADD YOUR KEY HERE";
 
 let resortLiked = false;
 let favoriteResorts;
